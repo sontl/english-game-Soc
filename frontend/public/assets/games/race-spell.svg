@@ -1,0 +1,22 @@
+<svg width="200" height="120" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="carBody" x1="20" y1="20" x2="180" y2="80">
+      <stop offset="0" stop-color="#FF8A65"/>
+      <stop offset="1" stop-color="#FF5252"/>
+    </linearGradient>
+    <linearGradient id="window" x1="60" y1="20" x2="120" y2="70">
+      <stop offset="0" stop-color="#E1F5FE"/>
+      <stop offset="1" stop-color="#81D4FA"/>
+    </linearGradient>
+  </defs>
+  <path d="M40 84H26C20 84 16 80 16 74V64C16 52 24 44 36 44H56C80 20 120 20 144 44H164C180 44 188 54 188 72V80C188 82 186 84 184 84H40Z" fill="url(#carBody)" stroke="#E64A19" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M68 44L120 44C128 44 134 50 136 58L140 72H52L56 54C58 48 62 44 68 44Z" fill="url(#window)"/>
+  <g>
+    <circle cx="60" cy="96" r="20" fill="#263238"/>
+    <circle cx="60" cy="96" r="10" fill="#90A4AE"/>
+    <circle cx="150" cy="96" r="20" fill="#263238"/>
+    <circle cx="150" cy="96" r="10" fill="#90A4AE"/>
+  </g>
+  <path d="M28 96H8" stroke="#FFAB91" stroke-width="8" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <path d="M192 96H212" stroke="#FFAB91" stroke-width="8" stroke-linecap="round" stroke-dasharray="12 12"/>
+</svg>

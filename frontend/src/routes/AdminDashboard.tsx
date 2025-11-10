@@ -50,8 +50,8 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="mx-auto flex max-w-5xl flex-col gap-6">
-      <section className="rounded-3xl bg-white/90 p-5 shadow-xl">
+    <div className="mx-auto flex max-w-5xl flex-col gap-6 pb-10">
+      <section className="rounded-[28px] bg-white/80 p-6 shadow-2xl shadow-primary/15 backdrop-blur">
         <h2 className="text-2xl font-bold">Add a new word</h2>
         <form className="mt-4 grid gap-3 md:grid-cols-2" onSubmit={handleSubmit}>
           <label className="flex flex-col gap-1 text-sm font-semibold">
@@ -125,7 +125,7 @@ const AdminDashboard = () => {
         </form>
       </section>
 
-      <section className="rounded-3xl bg-white/90 p-5 shadow-xl">
+      <section className="rounded-[28px] bg-white/80 p-6 shadow-2xl shadow-accent/15 backdrop-blur">
         <h2 className="text-xl font-bold">AI helper</h2>
         <div className="mt-3 grid gap-3 md:grid-cols-2">
           <label className="flex flex-col gap-1 text-sm font-semibold">
@@ -166,7 +166,7 @@ const AdminDashboard = () => {
         </p>
       </section>
 
-      <section className="rounded-3xl bg-white/90 p-5 shadow-xl">
+      <section className="rounded-[28px] bg-white/80 p-6 shadow-2xl shadow-secondary/25 backdrop-blur">
         <h2 className="text-xl font-bold">Word list</h2>
         {wordsQuery.isLoading ? (
           <p>Loading...</p>

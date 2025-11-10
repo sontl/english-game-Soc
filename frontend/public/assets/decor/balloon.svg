@@ -1,0 +1,12 @@
+<svg width="120" height="240" viewBox="0 0 120 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="balloonBody" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 70) scale(60 70)">
+      <stop offset="0" stop-color="#FFCDD2"/>
+      <stop offset="1" stop-color="#F06292"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="60" cy="70" rx="55" ry="70" fill="url(#balloonBody)"/>
+  <path d="M60 140C58 160 52 175 40 200" stroke="#F06292" stroke-width="6" stroke-linecap="round"/>
+  <path d="M60 140C62 160 68 175 80 200" stroke="#F48FB1" stroke-width="6" stroke-linecap="round"/>
+  <path d="M46 125L60 140L74 125C60 130 46 130 46 125Z" fill="#EC407A"/>
+</svg>

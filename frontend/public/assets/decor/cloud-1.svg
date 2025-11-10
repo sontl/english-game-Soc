@@ -1,0 +1,9 @@
+<svg width="180" height="120" viewBox="0 0 180 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cloudGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D1C4E9"/>
+    </linearGradient>
+  </defs>
+  <path d="M50 100C25 100 10 80 10 60C10 40 25 25 45 25C50 10 70 0 90 0C112 0 130 12 135 29C155 29 170 45 170 65C170 87 153 100 130 100H50Z" fill="url(#cloudGradient)"/>
+</svg>

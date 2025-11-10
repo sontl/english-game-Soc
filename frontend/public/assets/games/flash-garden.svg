@@ -1,0 +1,27 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="petal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80 80) scale(50)">
+      <stop offset="0" stop-color="#FFCDD2"/>
+      <stop offset="1" stop-color="#EC407A"/>
+    </radialGradient>
+    <radialGradient id="center" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80 80) scale(24)">
+      <stop offset="0" stop-color="#FFF59D"/>
+      <stop offset="1" stop-color="#FDD835"/>
+    </radialGradient>
+    <linearGradient id="stem" x1="80" y1="90" x2="80" y2="150">
+      <stop offset="0" stop-color="#A5D6A7"/>
+      <stop offset="1" stop-color="#66BB6A"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle cx="80" cy="45" r="18" fill="url(#petal)"/>
+    <circle cx="120" cy="75" r="18" fill="url(#petal)"/>
+    <circle cx="100" cy="120" r="18" fill="url(#petal)"/>
+    <circle cx="60" cy="120" r="18" fill="url(#petal)"/>
+    <circle cx="40" cy="75" r="18" fill="url(#petal)"/>
+    <circle cx="80" cy="80" r="36" fill="url(#petal)"/>
+    <circle cx="80" cy="80" r="22" fill="url(#center)"/>
+    <path d="M80 102C80 102 88 132 112 150" stroke="url(#stem)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M80 102C80 102 68 132 44 150" stroke="url(#stem)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

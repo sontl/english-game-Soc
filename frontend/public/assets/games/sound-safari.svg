@@ -1,0 +1,25 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headband" x1="40" y1="40" x2="120" y2="40">
+      <stop offset="0" stop-color="#8C9EFF"/>
+      <stop offset="1" stop-color="#536DFE"/>
+    </linearGradient>
+    <linearGradient id="earcup" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFECB3"/>
+      <stop offset="1" stop-color="#FFB74D"/>
+    </linearGradient>
+    <linearGradient id="notes" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#69F0AE"/>
+      <stop offset="1" stop-color="#00C853"/>
+    </linearGradient>
+  </defs>
+  <path d="M44 76C44 52 62 34 86 34C110 34 128 52 128 76" stroke="url(#headband)" stroke-width="14" stroke-linecap="round"/>
+  <rect x="28" y="72" width="28" height="56" rx="12" fill="url(#earcup)" stroke="#FF9800" stroke-width="6"/>
+  <rect x="116" y="72" width="28" height="56" rx="12" fill="url(#earcup)" stroke="#FF9800" stroke-width="6"/>
+  <path d="M60 90C68 84 84 84 92 90C100 96 116 96 124 90" stroke="#8C9EFF" stroke-width="8" stroke-linecap="round"/>
+  <g stroke="url(#notes)" stroke-width="8" stroke-linecap="round">
+    <path d="M30 44V12L58 20V52"/>
+    <circle cx="30" cy="52" r="12" fill="url(#notes)"/>
+    <circle cx="58" cy="60" r="10" fill="url(#notes)"/>
+  </g>
+</svg>

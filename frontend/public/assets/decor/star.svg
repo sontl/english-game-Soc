@@ -1,0 +1,9 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="starGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF176"/>
+      <stop offset="1" stop-color="#FFB300"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 6L72.9446 42.5946H111.17L80.1128 64.8107L93.0574 101.405L60 79.1886L26.9426 101.405L39.8872 64.8107L8.83015 42.5946H47.0554L60 6Z" fill="url(#starGrad)"/>
+</svg>
