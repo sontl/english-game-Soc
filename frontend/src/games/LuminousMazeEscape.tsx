@@ -354,6 +354,7 @@ const LuminousMazeEscape = () => {
         const isPath = open.has(key);
         const crystal = crystals[key];
         const isExit = exit.x === x && exit.y === y;
+        const isPlayer = playerPos.x === x && playerPos.y === y;
         tiles.push(
           <div
             key={key}
@@ -383,6 +384,15 @@ const LuminousMazeEscape = () => {
                 transition={{ duration: 2.4, repeat: Infinity }}
               />
             )}
+            {isPlayer && (
+              <motion.div
+                className="absolute flex h-12 w-12 items-center justify-center rounded-full border-4 border-secondary bg-gradient-to-br from-secondary/30 via-secondary/60 to-secondary text-2xl shadow-2xl"
+                layoutId="player"
+                transition={{ type: "spring", stiffness: 180, damping: 18 }}
+              >
+                🧭
+              </motion.div>
+            )}
           </div>
         );
       }
@@ -390,21 +400,13 @@ const LuminousMazeEscape = () => {
 
     return (
       <div
-        className="relative grid gap-1 rounded-2xl bg-slate-950/80 p-4 shadow-inner"
-        style={{ gridTemplateColumns: `repeat(${currentRound.maze.width}, minmax(0, 1fr))` }}
+        className="grid gap-1 rounded-2xl bg-slate-950/80 p-4 shadow-inner"
+        style={{ 
+          gridTemplateColumns: `repeat(${currentRound.maze.width}, minmax(0, 1fr))`,
+          gridTemplateRows: `repeat(${currentRound.maze.height}, minmax(0, 1fr))`
+        }}
       >
         {tiles}
-        <motion.div
-          className="pointer-events-none absolute flex h-12 w-12 items-center justify-center rounded-full border-4 border-secondary bg-gradient-to-br from-secondary/30 via-secondary/60 to-secondary text-2xl shadow-2xl"
-          animate={{
-            x: `${(playerPos.x / (currentRound.maze.width - 1)) * 100}%`,
-            y: `${(playerPos.y / (currentRound.maze.height - 1)) * 100}%`
-          }}
-          transition={{ type: "spring", stiffness: 180, damping: 18 }}
-          style={{ transform: "translate(-50%, -50%)" }}
-        >
-          🧭
-        </motion.div>
       </div>
     );
   };
