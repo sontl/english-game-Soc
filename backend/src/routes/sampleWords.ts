@@ -1,17 +1,17 @@
-import { Router } from "express";
+import { Router, type Request } from "express";
 import multer from "multer";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { z } from "zod";
 import { v4 as uuid } from "uuid";
-import type { Word } from "@english-game/shared";
+import type { Word, PartOfSpeech } from "@english-game/shared";
 
 const SAMPLE_WORDS_PATH = path.resolve(process.cwd(), "../frontend/public/words.sample.json");
 const UPLOADS_DIR = path.resolve(process.cwd(), "../frontend/public/uploads");
 
 const upload = multer({
   storage: multer.diskStorage({
-    destination: async (_req, _file, cb) => {
+    destination: async (_req: Request, _file: Express.Multer.File, cb: (error: Error | null, destination: string) => void) => {
       try {
         await mkdir(UPLOADS_DIR, { recursive: true });
         cb(null, UPLOADS_DIR);
@@ -19,7 +19,7 @@ const upload = multer({
         cb(error as Error, UPLOADS_DIR);
       }
     },
-    filename: (req, file, cb) => {
+    filename: (req: Request<{ id: string }>, file: Express.Multer.File, cb: (error: Error | null, filename: string) => void) => {
       const ext = path.extname(file.originalname) || "";
       const safeExt = ext.length <= 8 ? ext : ext.slice(0, 8);
       cb(null, `${req.params.id}-${Date.now()}${safeExt}`);
@@ -39,7 +39,7 @@ const wordBodySchema = z.object({
   level: z.number().int().min(1),
   term: z.number().int().min(1).optional(),
   week: z.number().int().min(1).optional(),
-  pos: z.string(),
+  pos: z.enum(["noun", "verb", "adjective", "adverb", "preposition", "particle", "pronoun", "determiner"]),
   aiGenerated: z.boolean().default(false),
   imageUrl: z.string().optional(),
   audioUrl: z.string().optional()
@@ -81,7 +81,7 @@ router.post("/", async (req, res) => {
     text: body.text,
     transcription: body.transcription ?? "",
     exampleSentence: body.exampleSentence ?? "",
-    pos: body.pos as SampleWordInput["pos"],
+    pos: body.pos as PartOfSpeech,
     level: body.level,
     term: body.term,
     week: body.week,
@@ -129,7 +129,7 @@ router.delete("/:id", async (req, res) => {
   return res.status(204).send();
 });
 
-router.post("/:id/image", upload.single("file"), async (req, res) => {
+router.post("/:id/image", upload.single("file"), async (req: Request<{ id: string }>, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "FileMissing" });
   }
@@ -153,7 +153,7 @@ router.post("/:id/image", upload.single("file"), async (req, res) => {
   return res.json({ word: updated });
 });
 
-router.post("/:id/audio", upload.single("file"), async (req, res) => {
+router.post("/:id/audio", upload.single("file"), async (req: Request<{ id: string }>, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "FileMissing" });
   }
