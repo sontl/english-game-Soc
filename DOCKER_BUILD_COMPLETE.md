@@ -26,24 +26,29 @@
    - Added shared package build step
    - Proper file copying order
    - Included migrations and knexfile
+   - Multi-stage build with minimal runtime image
 
-2. **backend/package.json**
+2. **frontend/Dockerfile**
+   - Build from root context (not frontend subdirectory)
+   - Build shared package first
+   - Added ARG declarations for build-time variables
+   - Set ENV variables from ARGs
+   - Multi-stage build with minimal runtime image
+
+3. **docker-compose.yml**
+   - Both services use root context (`.`)
+   - Added authentication configuration
+   - Backend receives `PARENT_AUTH_SECRET`
+   - Frontend receives `VITE_API_AUTH_TOKEN` as build arg
+
+4. **backend/package.json**
    - Added `@types/multer@^1.4.11`
    - Added `@types/uuid@^9.0.8`
 
-3. **backend/src/routes/sampleWords.ts**
+5. **backend/src/routes/sampleWords.ts**
    - Added proper TypeScript types
    - Fixed PartOfSpeech enum usage
    - Added Request type annotations for multer
-
-4. **docker-compose.yml**
-   - Added authentication configuration
-   - Backend receives `PARENT_AUTH_SECRET`
-   - Frontend receives `VITE_API_AUTH_TOKEN`
-
-5. **frontend/Dockerfile**
-   - Added ARG declarations for build-time variables
-   - Set ENV variables from ARGs
 
 6. **.dockerignore** (new)
    - Optimized build context
@@ -150,3 +155,26 @@ Total: ~1.1GB for all images
 ## Troubleshooting
 
 See [DOCKER_SETUP.md](DOCKER_SETUP.md) for detailed troubleshooting guide.
+
+
+## Key Architecture Points
+
+### Monorepo Structure
+Both backend and frontend Dockerfiles now:
+- Build from the **root context** (`.` in docker-compose.yml)
+- Build the `@english-game/shared` package first
+- Then build their respective applications
+- Use multi-stage builds for smaller production images
+
+### Why Root Context?
+The shared package is a local workspace dependency. To access it during Docker build:
+1. We need the root `package.json` (defines workspaces)
+2. We need the root `tsconfig.base.json` (shared TypeScript config)
+3. We need to build `packages/shared` before backend/frontend
+
+### Build Order
+```
+shared package → backend/frontend
+```
+
+Both backend and frontend depend on the shared package, so it must be built first in each Dockerfile.
