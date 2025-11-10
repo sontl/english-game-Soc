@@ -40,6 +40,26 @@ export const createPlayer = async (payload: unknown) => {
   return dbRowToPlayer(inserted);
 };
 
+export const updatePlayer = async (id: string, payload: unknown) => {
+  const parsed = playerSchema.partial().parse(payload);
+
+  const db = getConnection();
+  const updateData: Record<string, unknown> = {};
+  if (parsed.name !== undefined) updateData.name = parsed.name;
+  if (parsed.avatarUrl !== undefined) updateData.avatar_url = parsed.avatarUrl;
+
+  const [updated] = await db(TABLES.players)
+    .where({ id })
+    .update(updateData)
+    .returning("*");
+
+  if (!updated) {
+    throw new Error("Player not found");
+  }
+
+  return dbRowToPlayer(updated);
+};
+
 export const deletePlayer = async (id: string) => {
   const db = getConnection();
   return db(TABLES.players).where({ id }).del();

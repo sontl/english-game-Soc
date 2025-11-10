@@ -15,6 +15,13 @@ router.post("/", async (req, res) => {
   res.status(201).json({ player });
 });
 
+router.patch("/:id", async (req, res) => {
+  const id = z.string().uuid().parse(req.params.id);
+  const { updatePlayer } = await import("../repositories/playersRepository");
+  const player = await updatePlayer(id, req.body);
+  res.json({ player });
+});
+
 router.delete("/:id", async (req, res) => {
   const id = z.string().uuid().parse(req.params.id);
   await deletePlayer(id);

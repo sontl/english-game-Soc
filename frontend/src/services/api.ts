@@ -2,7 +2,7 @@ import { Word } from "@english-game/shared";
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:4000/api";
 
-const getAuthHeaders = () => {
+const getAuthHeaders = (): Record<string, string> => {
   const token = import.meta.env.VITE_API_AUTH_TOKEN;
   return token ? { Authorization: `Bearer ${token}` } : {};
 };
@@ -164,4 +164,82 @@ export const uploadSampleWordMedia = async (
 
   const data = await response.json();
   return data.word as Word;
+};
+
+export interface PlayerProfile {
+  id: string;
+  name: string;
+  parentId: string;
+  avatarUrl?: string;
+  createdAt: string;
+}
+
+export const fetchPlayers = async (parentId?: string): Promise<PlayerProfile[]> => {
+  const url = new URL(`${API_BASE}/players`);
+  if (parentId) {
+    url.searchParams.set("parentId", parentId);
+  }
+
+  const response = await fetch(url.toString(), {
+    headers: {
+      ...getAuthHeaders()
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch players");
+  }
+
+  const data = await response.json();
+  return data.players as PlayerProfile[];
+};
+
+export const createPlayer = async (payload: {
+  name: string;
+  parentId?: string;
+  avatarUrl?: string;
+}): Promise<PlayerProfile> => {
+  const response = await fetch(`${API_BASE}/players`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify(payload)
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to create player");
+  }
+
+  const data = await response.json();
+  return data.player as PlayerProfile;
+};
+
+export const updatePlayer = async (
+  id: string,
+  payload: { name?: string; avatarUrl?: string }
+): Promise<PlayerProfile> => {
+  const response = await fetch(`${API_BASE}/players/${id}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify(payload)
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to update player");
+  }
+
+  const data = await response.json();
+  return data.player as PlayerProfile;
+};
+
+export const deletePlayer = async (id: string): Promise<void> => {
+  const response = await fetch(`${API_BASE}/players/${id}`, {
+    method: "DELETE",
+    headers: {
+      ...getAuthHeaders()
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to delete player");
+  }
 };

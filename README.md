@@ -202,6 +202,67 @@ docker compose exec backend npm run knex -- migrate:latest
 
 ---
 
+## Managing Players
+
+Players can be managed through the UI on the home page or via the backend API.
+
+### Using the UI
+
+On the home page, the "Who is playing today?" section allows you to:
+
+- **Add a player**: Click the "+ Add Player" button, enter a name, and click "Add"
+- **Select a player**: Click on any player avatar to set them as the active player
+- **Remove a player**: Click the "×" button on any player card (requires at least 2 players)
+
+Players are automatically loaded from the backend when the app starts.
+
+### Using the API
+
+You can also manage players directly via API calls:
+
+**List Players**
+
+```bash
+curl http://localhost:4000/api/players
+```
+
+Optional: filter by parent ID:
+
+```bash
+curl http://localhost:4000/api/players?parentId=<uuid>
+```
+
+**Create a Player**
+
+```bash
+curl -X POST http://localhost:4000/api/players \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Emma",
+    "parentId": "optional-parent-uuid",
+    "avatarUrl": "https://example.com/avatar.jpg"
+  }'
+```
+
+If `parentId` is omitted, a random UUID will be generated. The `avatarUrl` is optional.
+
+**Delete a Player**
+
+```bash
+curl -X DELETE http://localhost:4000/api/players/<player-uuid>
+```
+
+**With Authentication**
+
+If `PARENT_AUTH_SECRET` is set, include the Bearer token:
+
+```bash
+curl http://localhost:4000/api/players \
+  -H "Authorization: Bearer your-secret-token"
+```
+
+---
+
 ## Deployment Notes
 
 - **Frontend**: Build with `npm run build --workspace @english-game/frontend` and deploy the `frontend/dist` folder to static hosting (Vercel, Netlify, Cloudflare Pages, etc.). Set `VITE_API_BASE_URL` at build time.

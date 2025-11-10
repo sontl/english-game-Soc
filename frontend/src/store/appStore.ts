@@ -1,13 +1,14 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import { Word } from "@english-game/shared";
-import { fetchWords } from "../services/api";
-
-interface PlayerProfile {
-  id: string;
-  name: string;
-  avatarUrl?: string;
-}
+import {
+  fetchWords,
+  fetchPlayers,
+  createPlayer as apiCreatePlayer,
+  updatePlayer as apiUpdatePlayer,
+  deletePlayer as apiDeletePlayer,
+  type PlayerProfile
+} from "../services/api";
 
 interface AppState {
   players: PlayerProfile[];
@@ -24,11 +25,15 @@ interface AppState {
   setActivePlayer: (player: PlayerProfile) => void;
   toggleDyslexiaMode: () => void;
   setWords: (words: Word[]) => void;
+  loadPlayers: () => Promise<void>;
+  addPlayer: (name: string, avatarUrl?: string) => Promise<void>;
+  updatePlayerInfo: (id: string, name?: string, avatarUrl?: string) => Promise<void>;
+  removePlayer: (id: string) => Promise<void>;
 }
 
 const defaultPlayers: PlayerProfile[] = [
-  { id: "1", name: "Mai", avatarUrl: "/avatars/sunflower.png" },
-  { id: "2", name: "Liam", avatarUrl: "/avatars/rocket.png" }
+  { id: "1", name: "Mai", avatarUrl: "/avatars/sunflower.png", parentId: "default", createdAt: new Date().toISOString() },
+  { id: "2", name: "Liam", avatarUrl: "/avatars/rocket.png", parentId: "default", createdAt: new Date().toISOString() }
 ];
 
 export const useAppStore = create<AppState>()(
@@ -42,7 +47,8 @@ export const useAppStore = create<AppState>()(
     dyslexiaMode: false,
     mode: "scheduled",
     initialize: () => {
-      const { term, week, setWeek } = get();
+      const { term, week, setWeek, loadPlayers } = get();
+      void loadPlayers();
       void setWeek(term, week);
     },
     setWeek: async (term: number, week: number) => {
@@ -74,6 +80,50 @@ export const useAppStore = create<AppState>()(
     },
     setActivePlayer: (player) => set({ activePlayer: player }),
     toggleDyslexiaMode: () => set((state) => ({ dyslexiaMode: !state.dyslexiaMode })),
-    setWords: (words) => set({ words })
+    setWords: (words) => set({ words }),
+    loadPlayers: async () => {
+      try {
+        const players = await fetchPlayers();
+        if (players.length > 0) {
+          set({ players, activePlayer: players[0] });
+        }
+      } catch (error) {
+        console.error("Failed to load players, using defaults", error);
+      }
+    },
+    addPlayer: async (name: string, avatarUrl?: string) => {
+      try {
+        const newPlayer = await apiCreatePlayer({ name, avatarUrl });
+        set((state) => ({ players: [...state.players, newPlayer] }));
+      } catch (error) {
+        console.error("Failed to create player", error);
+        throw error;
+      }
+    },
+    updatePlayerInfo: async (id: string, name?: string, avatarUrl?: string) => {
+      try {
+        const updated = await apiUpdatePlayer(id, { name, avatarUrl });
+        set((state) => ({
+          players: state.players.map((p) => (p.id === id ? updated : p)),
+          activePlayer: state.activePlayer?.id === id ? updated : state.activePlayer
+        }));
+      } catch (error) {
+        console.error("Failed to update player", error);
+        throw error;
+      }
+    },
+    removePlayer: async (id: string) => {
+      try {
+        await apiDeletePlayer(id);
+        set((state) => {
+          const players = state.players.filter((p) => p.id !== id);
+          const activePlayer = state.activePlayer?.id === id ? players[0] : state.activePlayer;
+          return { players, activePlayer };
+        });
+      } catch (error) {
+        console.error("Failed to delete player", error);
+        throw error;
+      }
+    }
   }))
 );
