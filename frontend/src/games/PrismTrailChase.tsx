@@ -457,13 +457,21 @@ const PrismTrailChase = () => {
               ))}
             </div>
 
-            <motion.div
-              className="relative z-10 mx-auto flex h-24 w-24 items-center justify-center rounded-full border-4 border-primary bg-gradient-to-br from-primary/20 via-primary/60 to-primary text-3xl shadow-2xl"
-              animate={{ x: `${(playerLane - 1) * 130}px` }}
-              transition={{ type: "spring", stiffness: 200, damping: 18 }}
-            >
-              🛼
-            </motion.div>
+            <div className="absolute bottom-0 left-0 right-0 grid grid-cols-3 gap-4">
+              {Array.from({ length: LANES }).map((_, lane) => (
+                <div key={lane} className="relative flex items-center justify-center">
+                  {lane === playerLane && (
+                    <motion.div
+                      className="flex h-24 w-24 items-center justify-center rounded-full border-4 border-primary bg-gradient-to-br from-primary/20 via-primary/60 to-primary text-3xl shadow-2xl"
+                      layoutId="player"
+                      transition={{ type: "spring", stiffness: 200, damping: 18 }}
+                    >
+                      🛼
+                    </motion.div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-6 flex items-center justify-center gap-6">

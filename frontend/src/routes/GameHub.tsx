@@ -10,7 +10,6 @@ import BubbleBounceBrigade from "../games/BubbleBounceBrigade";
 import BalloonBandJam from "../games/BalloonBandJam";
 import MysteryPicnicParade from "../games/MysteryPicnicParade";
 import RocketRescueRelay from "../games/RocketRescueRelay";
-import SkylineSpellDash from "../games/SkylineSpellDash";
 import LuminousMazeEscape from "../games/LuminousMazeEscape";
 import PrismTrailChase from "../games/PrismTrailChase";
 
@@ -39,8 +38,6 @@ const GameHub = () => {
         return <MysteryPicnicParade />;
       case "rocket-rescue-relay":
         return <RocketRescueRelay />;
-      case "skyline-spell-dash":
-        return <SkylineSpellDash />;
       case "luminous-maze-escape":
         return <LuminousMazeEscape />;
       case "prism-trail-chase":

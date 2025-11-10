@@ -106,15 +106,6 @@ const games = [
     badge: "Find the portal"
   },
   {
-    id: "skyline-spell-dash",
-    title: "Skyline Spell Dash",
-    description: "Glide your hoverboard through the city to catch letters",
-    image: "/assets/games/skyline-spell-dash.svg",
-    gradient: "from-sky-200 via-white to-indigo-200",
-    accentColor: "#42a5f5",
-    badge: "Ride the glow"
-  },
-  {
     id: "prism-trail-chase",
     title: "Prism Trail Chase",
     description: "Shift between neon lanes to capture racing word segments",
