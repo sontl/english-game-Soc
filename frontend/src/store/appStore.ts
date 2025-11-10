@@ -35,14 +35,14 @@ const defaultPlayers: PlayerProfile[] = [
   { 
     id: "00000000-0000-0000-0000-000000000001", 
     name: "Mai", 
-    avatarUrl: "/avatars/sunflower.png", 
+    avatarUrl: "https://i.pinimg.com/736x/b6/21/d1/b621d1ca68c2eaeeee344efce9c3406b.jpg", 
     parentId: "00000000-0000-0000-0000-000000000000", 
     createdAt: new Date().toISOString() 
   },
   { 
     id: "00000000-0000-0000-0000-000000000002", 
     name: "Liam", 
-    avatarUrl: "/avatars/rocket.png", 
+    avatarUrl: "https://static.vecteezy.com/system/resources/previews/048/964/261/non_2x/watercolor-drawing-rocket-cute-cartoon-illustration-for-children-travel-to-space-vector.jpg", 
     parentId: "00000000-0000-0000-0000-000000000000", 
     createdAt: new Date().toISOString() 
   }
