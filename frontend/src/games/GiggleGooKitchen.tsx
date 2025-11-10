@@ -57,7 +57,7 @@ const pickLine = (lines: string[], replacements: Record<string, string>) => {
 
 const buildRounds = (words: Word[]): RoundData[] => {
   const prepared = words
-    .map((word) => {
+    .map((word): RoundData | null => {
       const cleaned = sanitizeWord(word.text);
       if (!cleaned) return null;
       const letters = cleaned.split("");
@@ -80,9 +80,9 @@ const buildRounds = (words: Word[]): RoundData[] => {
         pool,
         audioUrl: word.audioUrl,
         imageUrl: word.imageUrl
-      } satisfies RoundData;
+      };
     })
-    .filter((value): value is RoundData => Boolean(value));
+    .filter((value): value is RoundData => value !== null);
 
   return shuffle(prepared).slice(0, Math.min(5, prepared.length));
 };
