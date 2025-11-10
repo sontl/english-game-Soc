@@ -1,0 +1,54 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="16" y="24" width="288" height="192" rx="36" fill="url(#paint0_radial_3_1)"/>
+  <g filter="url(#filter0_d_3_1)">
+    <ellipse cx="100" cy="120" rx="34" ry="46" fill="#F8BBD0"/>
+    <path d="M100 166C94 176 92 186 92 192H108C108 186 106 176 100 166Z" fill="#F06292"/>
+    <text x="100" y="126" text-anchor="middle" font-family="'Baloo 2', 'Comic Sans MS', sans-serif" font-size="24" fill="#AD1457">Do</text>
+  </g>
+  <g filter="url(#filter1_d_3_1)">
+    <ellipse cx="162" cy="108" rx="36" ry="52" fill="#C5CAE9"/>
+    <path d="M162 162C156 172 154 184 154 192H170C170 184 168 172 162 162Z" fill="#5C6BC0"/>
+    <text x="162" y="116" text-anchor="middle" font-family="'Baloo 2', 'Comic Sans MS', sans-serif" font-size="26" fill="#283593">Re</text>
+  </g>
+  <g filter="url(#filter2_d_3_1)">
+    <ellipse cx="226" cy="130" rx="32" ry="46" fill="#B3E5FC"/>
+    <path d="M226 172C220 182 218 190 218 196H234C234 190 232 182 226 172Z" fill="#039BE5"/>
+    <text x="226" y="138" text-anchor="middle" font-family="'Baloo 2', 'Comic Sans MS', sans-serif" font-size="24" fill="#01579B">Mi</text>
+  </g>
+  <path d="M56 196C84 190 108 206 132 214" stroke="#EC407A" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <path d="M188 206C210 200 230 204 252 212" stroke="#3949AB" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <g filter="url(#filter3_d_3_1)">
+    <rect x="96" y="56" width="130" height="38" rx="18" fill="#FFEB3B"/>
+    <path d="M114 74H208" stroke="#FDD835" stroke-width="6" stroke-linecap="round" stroke-dasharray="18 10"/>
+  </g>
+  <defs>
+    <filter id="filter0_d_3_1" x="60" y="66" width="80" height="138" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="6"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.6 0 0 0 0 0.16 0 0 0 0 0.35 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="shape"/>
+    </filter>
+    <filter id="filter1_d_3_1" x="122" y="48" width="80" height="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="6"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.24 0 0 0 0 0.33 0 0 0 0 0.59 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="shape"/>
+    </filter>
+    <filter id="filter2_d_3_1" x="186" y="84" width="80" height="136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="6"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.05 0 0 0 0 0.44 0 0 0 0 0.68 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="shape"/>
+    </filter>
+    <filter id="filter3_d_3_1" x="84" y="50" width="154" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.45 0 0 0 0 0.34 0 0 0 0 0.09 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="shape"/>
+    </filter>
+    <radialGradient id="paint0_radial_3_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 120) rotate(90) scale(120 160)">
+      <stop offset="0" stop-color="#FFF5F9"/>
+      <stop offset="1" stop-color="#E3F2FD"/>
+    </radialGradient>
+  </defs>
+</svg>

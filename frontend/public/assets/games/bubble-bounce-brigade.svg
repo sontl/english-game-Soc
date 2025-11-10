@@ -1,0 +1,43 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="16" y="24" width="288" height="192" rx="36" fill="url(#paint0_radial_2_1)"/>
+  <g opacity="0.6">
+    <circle cx="90" cy="86" r="26" fill="url(#paint1_radial_2_1)"/>
+    <circle cx="196" cy="70" r="32" fill="url(#paint1_radial_2_1)"/>
+    <circle cx="240" cy="130" r="28" fill="url(#paint1_radial_2_1)"/>
+    <circle cx="130" cy="150" r="34" fill="url(#paint1_radial_2_1)"/>
+    <circle cx="180" cy="186" r="20" fill="url(#paint1_radial_2_1)"/>
+  </g>
+  <g filter="url(#filter0_d_2_1)">
+    <circle cx="116" cy="112" r="36" fill="white"/>
+    <text x="116" y="120" text-anchor="middle" font-family="'Baloo 2', 'Comic Sans MS', sans-serif" font-size="32" fill="#1D4ED8">A</text>
+  </g>
+  <g filter="url(#filter1_d_2_1)">
+    <circle cx="204" cy="132" r="40" fill="#DBEAFE"/>
+    <text x="204" y="140" text-anchor="middle" font-family="'Baloo 2', 'Comic Sans MS', sans-serif" font-size="34" fill="#2563EB">?</text>
+  </g>
+  <path d="M70 188C90 164 118 154 150 156" stroke="#2563EB" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 12"/>
+  <path d="M214 184C232 174 250 172 268 178" stroke="#2563EB" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 12"/>
+  <defs>
+    <filter id="filter0_d_2_1" x="60" y="60" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="6"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.3 0 0 0 0 0.65 0 0 0 0.3 0"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="shape"/>
+    </filter>
+    <filter id="filter1_d_2_1" x="154" y="82" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="6"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.12 0 0 0 0 0.35 0 0 0 0 0.68 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="shape"/>
+    </filter>
+    <radialGradient id="paint0_radial_2_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 120) rotate(90) scale(120 160)">
+      <stop offset="0" stop-color="#E0F2FE"/>
+      <stop offset="0.45" stop-color="#F4F4FF"/>
+      <stop offset="1" stop-color="#C7D2FE"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial_2_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) rotate(45) scale(1)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#93C5FD" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+</svg>

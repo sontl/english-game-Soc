@@ -6,6 +6,10 @@ import SoundSafari from "../games/SoundSafari";
 import RaceSpell from "../games/RaceSpell";
 import StickerStory from "../games/StickerStory";
 import GiggleGooKitchen from "../games/GiggleGooKitchen";
+import BubbleBounceBrigade from "../games/BubbleBounceBrigade";
+import BalloonBandJam from "../games/BalloonBandJam";
+import MysteryPicnicParade from "../games/MysteryPicnicParade";
+import RocketRescueRelay from "../games/RocketRescueRelay";
 
 const GameHub = () => {
   const { gameId } = useParams();
@@ -24,6 +28,14 @@ const GameHub = () => {
         return <StickerStory />;
       case "giggle-goo-kitchen":
         return <GiggleGooKitchen />;
+      case "bubble-bounce-brigade":
+        return <BubbleBounceBrigade />;
+      case "balloon-band-jam":
+        return <BalloonBandJam />;
+      case "mystery-picnic-parade":
+        return <MysteryPicnicParade />;
+      case "rocket-rescue-relay":
+        return <RocketRescueRelay />;
       default:
         return <p>Game not found.</p>;
     }

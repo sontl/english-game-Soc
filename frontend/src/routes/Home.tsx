@@ -59,6 +59,42 @@ const games = [
     gradient: "from-lime-100 via-white to-rose-100",
     accentColor: "#7cb342",
     badge: "Whip up the goo"
+  },
+  {
+    id: "bubble-bounce-brigade",
+    title: "Bubble Bounce Brigade",
+    description: "Pop the missing letter before the bubbles drift away",
+    image: "/assets/games/bubble-bounce-brigade.svg",
+    gradient: "from-sky-100 via-white to-emerald-100",
+    accentColor: "#29b6f6",
+    badge: "Float to win"
+  },
+  {
+    id: "balloon-band-jam",
+    title: "Balloon Band Jam",
+    description: "Match the music to the perfectly spelled balloon",
+    image: "/assets/games/balloon-band-jam.svg",
+    gradient: "from-fuchsia-100 via-white to-sky-100",
+    accentColor: "#ec407a",
+    badge: "Strike a chord"
+  },
+  {
+    id: "mystery-picnic-parade",
+    title: "Mystery Picnic Parade",
+    description: "Gather word chunks to pack magical baskets",
+    image: "/assets/games/mystery-picnic-parade.svg",
+    gradient: "from-lime-100 via-white to-amber-100",
+    accentColor: "#7cb342",
+    badge: "Pack the basket"
+  },
+  {
+    id: "rocket-rescue-relay",
+    title: "Rocket Rescue Relay",
+    description: "Fuel rockets by choosing the next letter in time",
+    image: "/assets/games/rocket-rescue-relay.svg",
+    gradient: "from-indigo-100 via-white to-cyan-100",
+    accentColor: "#536dfe",
+    badge: "Boost to space"
   }
 ];
 

@@ -56,7 +56,11 @@ export type GameId =
   | "sound-safari"
   | "race-spell"
   | "sticker-story"
-  | "giggle-goo-kitchen";
+  | "giggle-goo-kitchen"
+  | "bubble-bounce-brigade"
+  | "balloon-band-jam"
+  | "mystery-picnic-parade"
+  | "rocket-rescue-relay";
 
 export interface AnalyticsEventBase {
   eventId: string;
