@@ -219,3 +219,19 @@ CMD ["npx", "tsx", "src/server.ts"]
 **Solution:** Changed from `npm install --omit=dev` to `npm install` in the frontend runtime image to include vite.
 
 **Note:** For true production deployment, you should serve the static files from `dist/` using nginx or another web server instead of using vite preview.
+
+
+### Frontend Preview Server Host Configuration
+**Issue:** Vite preview server blocks requests from unknown hosts for security.
+
+**Solution:** Configure Vite preview server to accept all hosts in `vite.config.ts`:
+
+```typescript
+preview: {
+  port: 4173,
+  host: true,        // Listen on all addresses
+  strictPort: true   // Fail if port is already in use
+}
+```
+
+This allows the preview server to accept requests from any domain, which is necessary when running in Docker or accessing from a custom domain.
