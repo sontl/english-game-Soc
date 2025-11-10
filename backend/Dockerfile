@@ -49,4 +49,4 @@ RUN npm install --omit=dev
 
 WORKDIR /app/backend
 
-CMD ["node", "dist/server.js"]
+CMD ["node", "--experimental-specifier-resolution=node", "dist/server.js"]

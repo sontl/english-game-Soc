@@ -20,6 +20,14 @@
   - Added Request type annotations
 - **Status:** ✅ Resolved
 
+### Issue 4: TypeScript Error in GiggleGooKitchen.tsx
+- **Fixed in:** `frontend/src/games/GiggleGooKitchen.tsx`
+- **Solution:**
+  - Fixed type predicate in `buildRounds` function
+  - Changed from `satisfies RoundData` to explicit return type
+  - Updated filter to check `value !== null` instead of `Boolean(value)`
+- **Status:** ✅ Resolved
+
 ## Files Modified
 
 1. **backend/Dockerfile**
@@ -178,3 +186,22 @@ shared package → backend/frontend
 ```
 
 Both backend and frontend depend on the shared package, so it must be built first in each Dockerfile.
+
+
+## Runtime Fixes
+
+### Backend ESM Module Resolution
+**Issue:** Node.js ESM requires explicit `.js` extensions in imports, but TypeScript doesn't add them by default.
+
+**Solution:** Added `--experimental-specifier-resolution=node` flag to the Node.js command in the Dockerfile. This allows extensionless imports to work.
+
+```dockerfile
+CMD ["node", "--experimental-specifier-resolution=node", "dist/server.js"]
+```
+
+### Frontend Preview Server
+**Issue:** Vite is a devDependency but needed for the preview server.
+
+**Solution:** Changed from `npm install --omit=dev` to `npm install` in the frontend runtime image to include vite.
+
+**Note:** For true production deployment, you should serve the static files from `dist/` using nginx or another web server instead of using vite preview.

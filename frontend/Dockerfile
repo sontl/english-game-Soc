@@ -45,8 +45,8 @@ COPY --from=builder /app/frontend/package.json ./frontend/package.json
 COPY --from=builder /app/packages/shared/dist ./packages/shared/dist
 COPY --from=builder /app/packages/shared/package.json ./packages/shared/package.json
 
-# Install production dependencies
-RUN npm install --omit=dev
+# Install dependencies (vite is needed for preview server)
+RUN npm install
 
 WORKDIR /app/frontend
 
