@@ -224,14 +224,20 @@ CMD ["npx", "tsx", "src/server.ts"]
 ### Frontend Preview Server Host Configuration
 **Issue:** Vite preview server blocks requests from unknown hosts for security.
 
-**Solution:** Configure Vite preview server to accept all hosts in `vite.config.ts`:
+**Solution:** Configure Vite preview server with explicit allowed hosts in `vite.config.ts`:
 
 ```typescript
 preview: {
   port: 4173,
   host: true,        // Listen on all addresses
-  strictPort: true   // Fail if port is already in use
+  strictPort: true,  // Fail if port is already in use
+  allowedHosts: [
+    'localhost',
+    '127.0.0.1',
+    'game.i4y.net',
+    '.i4y.net'       // Allow all subdomains
+  ]
 }
 ```
 
-This allows the preview server to accept requests from any domain, which is necessary when running in Docker or accessing from a custom domain.
+**Important:** Add your custom domain to the `allowedHosts` array. Use a leading dot (`.domain.com`) to allow all subdomains.

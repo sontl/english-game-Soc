@@ -186,7 +186,19 @@ docker compose logs backend
 ```
 
 ### Frontend shows "Blocked request"
-This is now fixed! The vite config accepts all hosts.
+**Fixed!** Add your domain to `allowedHosts` in `frontend/vite.config.ts`:
+
+```typescript
+preview: {
+  allowedHosts: [
+    'localhost',
+    'your-domain.com',
+    '.your-domain.com'  // For subdomains
+  ]
+}
+```
+
+Then rebuild: `docker compose up --build frontend`
 
 ### Database connection errors
 ```bash
