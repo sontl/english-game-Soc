@@ -152,6 +152,29 @@ Frontend `.env` example (`frontend/.env.local`):
 VITE_API_BASE_URL=http://localhost:4000/api
 ```
 
+### API Authentication
+
+If you set `PARENT_AUTH_SECRET` in the backend `.env`, every request to `/api/*` must include an `Authorization: Bearer <your-secret>` header.
+
+For local debugging you can either remove the variable (disables auth) or keep it and configure the frontend to forward the token, e.g. create `frontend/.env.local` with:
+
+```
+VITE_API_BASE_URL=http://localhost:4000/api
+VITE_API_AUTH_TOKEN=super-secret-token
+```
+
+Then ensure your fetch calls attach the header:
+
+```ts
+await fetch(`${import.meta.env.VITE_API_BASE_URL}/words`, {
+  headers: {
+    Authorization: `Bearer ${import.meta.env.VITE_API_AUTH_TOKEN}`
+  }
+});
+```
+
+Any client (Postman, curl, etc.) must send the same header to avoid `401 Unauthorized` responses.
+
 ---
 
 ## Docker & Compose

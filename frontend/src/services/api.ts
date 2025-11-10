@@ -22,7 +22,12 @@ export const fetchWords = async (week?: number): Promise<Word[]> => {
       throw new Error("Unable to fetch fallback words");
     }
     const data = await response.json();
-    return data.words as Word[];
+    const words = data.words as Word[];
+    if (week === undefined) {
+      return words;
+    }
+
+    return words.filter((word) => word.level === week);
   }
 };
 
