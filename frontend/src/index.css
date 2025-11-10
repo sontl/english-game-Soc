@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", system-ui, sans-serif;
+  background: linear-gradient(180deg, #fff8e1 0%, #fffde7 100%);
+  min-height: 100vh;
+  color: #263238;
+}
+
+button {
+  font-family: inherit;
+}

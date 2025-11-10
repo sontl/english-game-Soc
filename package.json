@@ -1,0 +1,16 @@
+{
+  "name": "english-game-soc",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.8.1",
+  "workspaces": [
+    "backend",
+    "frontend",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @english-game/shared && npm run build --workspace @english-game/backend && npm run build --workspace @english-game/frontend",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces"
+  }
+}

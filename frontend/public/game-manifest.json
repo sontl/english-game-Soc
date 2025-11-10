@@ -1,0 +1,33 @@
+{
+  "name": "English Garden Mini Games",
+  "description": "HTML5 mini-game package for vocabulary practice.",
+  "version": "0.1.0",
+  "assets": {
+    "images": [
+      {
+        "id": "apple-sticker",
+        "description": "Cloudflare signed URL placeholder for apple sticker",
+        "path": "{CLOUDFLARE_SIGNED_URL}/apple.png"
+      }
+    ],
+    "audio": [
+      {
+        "id": "apple-pronunciation",
+        "description": "Cloudflare signed URL placeholder for apple mp3",
+        "path": "{CLOUDFLARE_SIGNED_URL}/apple.mp3"
+      }
+    ]
+  },
+  "api": {
+    "words": {
+      "method": "GET",
+      "endpoint": "/api/words?week={number}",
+      "response": "{ words: Word[] }"
+    },
+    "session": {
+      "method": "POST",
+      "endpoint": "/api/sessions",
+      "body": "{ playerId: string, startedAt: string }"
+    }
+  }
+}

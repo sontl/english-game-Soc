@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@english-game/shared": ["../packages/shared/dist/index"],
+      "@english-game/shared/*": ["../packages/shared/dist/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["src/**/*.test.tsx", "src/**/*.spec.tsx"]
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "paths": {
+      "@english-game/shared": ["../packages/shared/dist/index"],
+      "@english-game/shared/*": ["../packages/shared/dist/*"]
+    }
+  }
+}
