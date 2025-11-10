@@ -144,6 +144,17 @@ docker compose down -v  # Removes volumes (deletes database data!)
 2. Check `DATABASE_URL` in `docker-compose.yml`
 3. Wait a few seconds for database to initialize on first run
 
+### Build errors: "Cannot find module '@english-game/shared'"
+
+**Problem**: Backend build fails with TypeScript errors about missing shared package
+
+**Solution**:
+This is already fixed in the Dockerfile. The shared package is built before the backend.
+If you still see this error:
+1. Clear Docker build cache: `docker compose build --no-cache backend`
+2. Ensure you're building from the project root
+3. Check that `packages/shared/` directory exists
+
 ### Port already in use
 
 **Problem**: `Error: bind: address already in use`
