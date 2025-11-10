@@ -4,6 +4,8 @@ Interactive HTML5 mini-games and authoring tools for weekly vocabulary practice.
 
 **🚀 New to the project?** Check out the [Quick Start Guide](QUICK_START.md) to get up and running in 5 minutes!
 
+**🐳 Using Docker?** See the [Docker Setup Guide](DOCKER_SETUP.md) for containerized deployment.
+
 ---
 
 ## Table of Contents
@@ -181,26 +183,65 @@ Any client (Postman, curl, etc.) must send the same header to avoid `401 Unautho
 
 ## Docker & Compose
 
-- Build backend image: `docker build -t english-game-backend ./backend`
-- Build frontend image: `docker build -t english-game-frontend ./frontend`
+### Setup
 
-Use Compose for a full stack (backend + Postgres + frontend preview):
+1. **Create environment file** (optional but recommended):
+   ```bash
+   cp .env.example .env
+   ```
+   
+   Edit `.env` and set your `PARENT_AUTH_SECRET`:
+   ```
+   PARENT_AUTH_SECRET=your-strong-secret-token
+   ```
 
-```bash
-docker compose up --build
-```
+2. **Build and start services**:
+   ```bash
+   docker compose up --build
+   ```
 
-Services exposed:
+### Services
 
 - Backend: `http://localhost:4000`
 - Frontend preview: `http://localhost:4173`
 - Postgres: `localhost:5432` (username/password `postgres`/`postgres`)
+
+### Database Migrations
 
 Run migrations inside the backend container:
 
 ```bash
 docker compose exec backend npm run knex -- migrate:latest
 ```
+
+### Seed Database
+
+After migrations, seed the database with sample words:
+
+```bash
+docker compose exec backend npm run seed
+```
+
+Or use the Admin Dashboard UI at `http://localhost:4173/admin`
+
+### Authentication
+
+The `PARENT_AUTH_SECRET` environment variable is used for:
+- Backend API authentication (`PARENT_AUTH_SECRET`)
+- Frontend API requests (`VITE_API_AUTH_TOKEN`)
+
+Both are set from the same `.env` variable to ensure they match.
+
+### Building Individual Images
+
+- Build backend image: `docker build -t english-game-backend ./backend`
+- Build frontend image: 
+  ```bash
+  docker build -t english-game-frontend \
+    --build-arg VITE_API_BASE_URL=http://localhost:4000/api \
+    --build-arg VITE_API_AUTH_TOKEN=your-secret-token \
+    ./frontend
+  ```
 
 ---
 

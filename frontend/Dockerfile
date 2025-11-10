@@ -1,6 +1,14 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 
+# Accept build arguments
+ARG VITE_API_BASE_URL
+ARG VITE_API_AUTH_TOKEN
+
+# Set them as environment variables for the build
+ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
+ENV VITE_API_AUTH_TOKEN=$VITE_API_AUTH_TOKEN
+
 COPY package.json tsconfig*.json vite.config.ts tailwind.config.ts postcss.config.js .
 COPY public ./public
 COPY src ./src
