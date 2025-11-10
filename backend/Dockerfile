@@ -34,19 +34,27 @@ ENV NODE_ENV=production
 # Copy root package.json for workspace configuration
 COPY package.json ./
 
-# Copy backend built files, migrations, and config
+# Copy backend source, built files, migrations, and config
+COPY --from=builder /app/backend/src ./backend/src
 COPY --from=builder /app/backend/dist ./backend/dist
 COPY --from=builder /app/backend/migrations ./backend/migrations
 COPY --from=builder /app/backend/knexfile.ts ./backend/knexfile.ts
 COPY --from=builder /app/backend/package.json ./backend/package.json
+COPY --from=builder /app/backend/tsconfig*.json ./backend/
 
 # Copy shared package (backend depends on it)
+COPY --from=builder /app/packages/shared/src ./packages/shared/src
 COPY --from=builder /app/packages/shared/dist ./packages/shared/dist
 COPY --from=builder /app/packages/shared/package.json ./packages/shared/package.json
+COPY --from=builder /app/packages/shared/tsconfig*.json ./packages/shared/
 
-# Install production dependencies
-RUN npm install --omit=dev
+# Copy root tsconfig
+COPY --from=builder /app/tsconfig.base.json ./
+
+# Install production dependencies plus tsx for running the server
+RUN npm install --omit=dev && npm install tsx
 
 WORKDIR /app/backend
 
-CMD ["node", "--experimental-specifier-resolution=node", "dist/server.js"]
+# Run the TypeScript source directly with tsx (handles imports properly)
+CMD ["npx", "tsx", "src/server.ts"]

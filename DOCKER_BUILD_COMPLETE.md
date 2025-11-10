@@ -193,11 +193,25 @@ Both backend and frontend depend on the shared package, so it must be built firs
 ### Backend ESM Module Resolution
 **Issue:** Node.js ESM requires explicit `.js` extensions in imports, but TypeScript doesn't add them by default.
 
-**Solution:** Added `--experimental-specifier-resolution=node` flag to the Node.js command in the Dockerfile. This allows extensionless imports to work.
+**Solution:** Run the TypeScript source files directly using `tsx` instead of compiled JavaScript. This handles imports properly without needing file extensions.
 
 ```dockerfile
-CMD ["node", "--experimental-specifier-resolution=node", "dist/server.js"]
+# Copy source files and tsconfig
+COPY --from=builder /app/backend/src ./backend/src
+COPY --from=builder /app/backend/tsconfig*.json ./backend/
+COPY --from=builder /app/tsconfig.base.json ./
+
+# Install tsx
+RUN npm install --omit=dev && npm install tsx
+
+# Run TypeScript directly
+CMD ["npx", "tsx", "src/server.ts"]
 ```
+
+**Benefits:**
+- No need to modify import statements
+- Handles ESM properly
+- Slightly larger image but more reliable
 
 ### Frontend Preview Server
 **Issue:** Vite is a devDependency but needed for the preview server.
