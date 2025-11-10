@@ -95,6 +95,33 @@ const games = [
     gradient: "from-indigo-100 via-white to-cyan-100",
     accentColor: "#536dfe",
     badge: "Boost to space"
+  },
+  {
+    id: "luminous-maze-escape",
+    title: "Luminous Maze Escape",
+    description: "Guide the glowing compass through a maze to gather letters",
+    image: "/assets/games/luminous-maze-escape.svg",
+    gradient: "from-violet-200 via-white to-slate-200",
+    accentColor: "#7e57c2",
+    badge: "Find the portal"
+  },
+  {
+    id: "skyline-spell-dash",
+    title: "Skyline Spell Dash",
+    description: "Glide your hoverboard through the city to catch letters",
+    image: "/assets/games/skyline-spell-dash.svg",
+    gradient: "from-sky-200 via-white to-indigo-200",
+    accentColor: "#42a5f5",
+    badge: "Ride the glow"
+  },
+  {
+    id: "prism-trail-chase",
+    title: "Prism Trail Chase",
+    description: "Shift between neon lanes to capture racing word segments",
+    image: "/assets/games/prism-trail-chase.svg",
+    gradient: "from-cyan-200 via-white to-fuchsia-200",
+    accentColor: "#26c6da",
+    badge: "Master the run"
   }
 ];
 

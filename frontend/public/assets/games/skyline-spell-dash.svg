@@ -1,0 +1,41 @@
+<svg width="240" height="200" viewBox="0 0 240 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skylineGradient" x1="0" y1="0" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9be7ff" />
+      <stop offset="0.5" stop-color="#e3f2fd" />
+      <stop offset="1" stop-color="#c5cae9" />
+    </linearGradient>
+    <linearGradient id="hoverTrail" x1="40" y1="120" x2="200" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#29b6f6" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#7c4dff" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-30" y="-30" width="300" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="240" height="200" rx="28" fill="url(#skylineGradient)" />
+  <g opacity="0.25" fill="#90a4ae">
+    <rect x="16" y="96" width="28" height="72" rx="4" />
+    <rect x="52" y="76" width="32" height="92" rx="4" />
+    <rect x="96" y="84" width="42" height="84" rx="4" />
+    <rect x="150" y="64" width="36" height="104" rx="4" />
+    <rect x="194" y="92" width="26" height="76" rx="4" />
+  </g>
+  <path d="M40 150C68 134 112 126 140 116C164 108 192 96 212 84" stroke="url(#hoverTrail)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+  <g transform="translate(96 104)">
+    <circle cx="24" cy="24" r="24" fill="#1e88e5" />
+    <path d="M18 24C18 20.6863 20.6863 18 24 18H34C36.2091 18 38 19.7909 38 22C38 24.2091 36.2091 26 34 26H24V30H34C36.2091 30 38 31.7909 38 34C38 36.2091 36.2091 38 34 38H24C20.6863 38 18 35.3137 18 32V24Z" fill="white" />
+  </g>
+  <g transform="translate(34 34) rotate(-12)">
+    <rect x="-6" y="-6" width="44" height="44" rx="12" fill="rgba(255,255,255,0.6)" />
+    <text x="16" y="22" text-anchor="middle" font-family="'Poppins', 'Arial', sans-serif" font-size="18" font-weight="700" fill="#1565c0">A</text>
+  </g>
+  <g transform="translate(190 36) rotate(8)">
+    <rect x="-8" y="-8" width="48" height="48" rx="14" fill="rgba(255,255,255,0.65)" />
+    <text x="16" y="22" text-anchor="middle" font-family="'Poppins', 'Arial', sans-serif" font-size="18" font-weight="700" fill="#512da8">Z</text>
+  </g>
+</svg>
