@@ -50,6 +50,15 @@ const games = [
     gradient: "from-purple-100 via-lavender to-white",
     accentColor: "#8c9eff",
     badge: "Craft a tale"
+  },
+  {
+    id: "giggle-goo-kitchen",
+    title: "Giggle Goo Kitchen",
+    description: "Pick the perfect letters to blend monster smoothies",
+    image: "/assets/games/giggle-goo-kitchen.svg",
+    gradient: "from-lime-100 via-white to-rose-100",
+    accentColor: "#7cb342",
+    badge: "Whip up the goo"
   }
 ];
 

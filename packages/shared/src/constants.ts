@@ -5,7 +5,8 @@ export const GAME_IDS: readonly GameId[] = [
   "little-explorer",
   "sound-safari",
   "race-spell",
-  "sticker-story"
+  "sticker-story",
+  "giggle-goo-kitchen"
 ];
 export const DEFAULT_LEVEL = 1;
 export const MAX_TOUCH_TARGET = 64;

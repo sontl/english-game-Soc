@@ -5,6 +5,7 @@ import LittleExplorer from "../games/LittleExplorer";
 import SoundSafari from "../games/SoundSafari";
 import RaceSpell from "../games/RaceSpell";
 import StickerStory from "../games/StickerStory";
+import GiggleGooKitchen from "../games/GiggleGooKitchen";
 
 const GameHub = () => {
   const { gameId } = useParams();
@@ -21,6 +22,8 @@ const GameHub = () => {
         return <RaceSpell />;
       case "sticker-story":
         return <StickerStory />;
+      case "giggle-goo-kitchen":
+        return <GiggleGooKitchen />;
       default:
         return <p>Game not found.</p>;
     }

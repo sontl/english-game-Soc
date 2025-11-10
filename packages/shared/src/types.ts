@@ -55,7 +55,8 @@ export type GameId =
   | "little-explorer"
   | "sound-safari"
   | "race-spell"
-  | "sticker-story";
+  | "sticker-story"
+  | "giggle-goo-kitchen";
 
 export interface AnalyticsEventBase {
   eventId: string;
