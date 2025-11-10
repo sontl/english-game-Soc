@@ -9,7 +9,8 @@
     "start": "node dist/server.js",
     "lint": "eslint src --ext .ts",
     "test": "vitest run",
-    "knex": "node --loader ts-node/esm ../node_modules/knex/bin/cli.js --knexfile knexfile.ts"
+    "knex": "node --loader ts-node/esm ../node_modules/knex/bin/cli.js --knexfile knexfile.ts",
+    "seed": "tsx src/scripts/seedWords.ts"
   },
   "dependencies": {
     "@english-game/shared": "file:../packages/shared",

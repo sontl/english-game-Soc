@@ -1,13 +1,17 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useAppStore } from "../store/appStore";
 import { shuffle } from "../utils/random";
 import { playSound, playSuccessTone } from "../utils/sound";
+import { useGameTracking } from "../hooks/useGameTracking";
 
 const SoundSafari = () => {
   const { words } = useAppStore();
   const [score, setScore] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [message, setMessage] = useState("Tap the speaker to hear the word.");
+  const { trackWordSeen, trackCorrectAnswer, trackAudioReplay } = useGameTracking({
+    gameId: "sound-safari"
+  });
 
   const rounds = useMemo(() => {
     const selection = shuffle(words).slice(0, 5);
@@ -24,16 +28,32 @@ const SoundSafari = () => {
 
   const currentRound = rounds[currentIndex];
 
+  // Track word seen when round changes
+  useEffect(() => {
+    if (currentRound) {
+      void trackWordSeen(currentRound.word.id);
+    }
+  }, [currentRound, trackWordSeen]);
+
   const handleOption = (wordId: string) => {
     if (!currentRound) return;
     if (wordId === currentRound.word.id) {
       playSuccessTone();
       setScore((prev) => prev + 1);
       setMessage("Awesome listening! Next animal incoming.");
+      
+      // Track correct answer
+      void trackCorrectAnswer(currentRound.word.id);
     } else {
       setMessage("Try again! Listen closely.");
     }
     setCurrentIndex((prev) => (prev + 1) % rounds.length);
+  };
+
+  const handlePlayAudio = () => {
+    if (!currentRound) return;
+    playSound(currentRound.word.audioUrl, currentRound.word.text);
+    void trackAudioReplay(currentRound.word.id);
   };
 
   return (
@@ -48,7 +68,7 @@ const SoundSafari = () => {
       <div className="rounded-3xl bg-gradient-to-br from-secondary/20 via-white to-accent/20 p-6 text-center">
         <button
           type="button"
-          onClick={() => playSound(currentRound?.word.audioUrl, currentRound?.word.text)}
+          onClick={handlePlayAudio}
           className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-primary text-3xl text-white shadow"
           aria-label="Play word audio"
         >

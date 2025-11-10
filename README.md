@@ -2,6 +2,8 @@
 
 Interactive HTML5 mini-games and authoring tools for weekly vocabulary practice. The repository is a TypeScript monorepo containing a React frontend, an Express API backend, and shared schemas/utilities.
 
+**🚀 New to the project?** Check out the [Quick Start Guide](QUICK_START.md) to get up and running in 5 minutes!
+
 ---
 
 ## Table of Contents
@@ -127,7 +129,7 @@ Vitest and ESLint execute per workspace; failures from any package stop the aggr
   npm run knex --workspace @english-game/backend migrate:rollback
   ```
 
-- Seed scripts can be added in `backend/seeds` and executed by `npm run knex --workspace @english-game/backend seed:run`.
+- **Seeding the database**: Import sample words from `frontend/public/words.sample.json` using either the Admin Dashboard UI or the CLI script. See [SEED_GUIDE.md](SEED_GUIDE.md) for detailed instructions.
 
 ---
 
@@ -201,6 +203,26 @@ docker compose exec backend npm run knex -- migrate:latest
 ```
 
 ---
+
+## Player Tracking System
+
+The app includes a comprehensive player tracking system that monitors each child's learning progress. See [PLAYER_SYSTEM.md](PLAYER_SYSTEM.md) for detailed documentation and [INTEGRATION_SUMMARY.md](INTEGRATION_SUMMARY.md) for implementation details.
+
+### Features
+
+- **Progress Tracking**: Tracks how many times each word was answered correctly
+- **Practice Sessions**: Records when players start/end games
+- **Analytics Events**: Logs game interactions (word_seen, played_game, replay_audio)
+- **Progress Dashboard**: Visual dashboard showing mastered words and practice progress
+- **Adaptive Learning**: Backend scheduler can recommend words based on progress
+
+### Integrated Games
+
+Currently tracking is integrated in:
+- ✅ Flash Garden
+- ✅ Sound Safari
+
+Other games can be easily integrated using the `useGameTracking` hook (see INTEGRATION_SUMMARY.md).
 
 ## Managing Players
 

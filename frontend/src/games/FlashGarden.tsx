@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useAppStore } from "../store/appStore";
 import { shuffle } from "../utils/random";
 import { playCelebration, playSound, playSuccessTone } from "../utils/sound";
+import { useGameTracking } from "../hooks/useGameTracking";
 
 interface CardData {
   id: string;
@@ -16,6 +17,9 @@ const FlashGarden = () => {
   const [flippedIds, setFlippedIds] = useState<string[]>([]);
   const [matchedIds, setMatchedIds] = useState<string[]>([]);
   const [status, setStatus] = useState("Tap two cards to find a match!");
+  const { trackWordSeen, trackCorrectAnswer, trackAudioReplay } = useGameTracking({
+    gameId: "flash-garden"
+  });
 
   const cards = useMemo<CardData[]>(() => {
     const selection = shuffle(words).slice(0, 6);
@@ -38,7 +42,8 @@ const FlashGarden = () => {
           id: `${word.id}-audio`,
           type: "audio",
           wordId: word.id,
-          label: "🔊"
+          label: "🔊",
+          mediaUrl: word.audioUrl
         });
       }
       if (items.length === 1) {
@@ -55,6 +60,14 @@ const FlashGarden = () => {
     return shuffle(generated);
   }, [words]);
 
+  // Track word seen when cards are generated
+  useEffect(() => {
+    const uniqueWordIds = new Set(cards.map((card) => card.wordId));
+    uniqueWordIds.forEach((wordId) => {
+      void trackWordSeen(wordId);
+    });
+  }, [cards, trackWordSeen]);
+
   const checkMatch = (ids: string[]) => {
     if (ids.length < 2) return;
     const [first, second] = ids;
@@ -66,6 +79,10 @@ const FlashGarden = () => {
       playSuccessTone();
       setMatchedIds((prev) => [...prev, firstCard.wordId]);
       setStatus("Great job! Flower blooming!");
+      
+      // Track correct answer
+      void trackCorrectAnswer(firstCard.wordId);
+      
       setTimeout(() => setFlippedIds([]), 800);
     } else {
       setStatus("Oops! Try another pair.");
@@ -77,12 +94,14 @@ const FlashGarden = () => {
     if (matchedIds.includes(card.wordId) || flippedIds.includes(card.id)) {
       if (card.type === "audio" && card.mediaUrl) {
         playSound(card.mediaUrl);
+        void trackAudioReplay(card.wordId);
       }
       return;
     }
 
     if (card.type === "audio" && card.mediaUrl) {
       playSound(card.mediaUrl);
+      void trackAudioReplay(card.wordId);
     }
 
     const next = [...flippedIds, card.id];

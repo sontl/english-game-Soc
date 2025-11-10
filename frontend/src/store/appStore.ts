@@ -32,8 +32,20 @@ interface AppState {
 }
 
 const defaultPlayers: PlayerProfile[] = [
-  { id: "1", name: "Mai", avatarUrl: "/avatars/sunflower.png", parentId: "default", createdAt: new Date().toISOString() },
-  { id: "2", name: "Liam", avatarUrl: "/avatars/rocket.png", parentId: "default", createdAt: new Date().toISOString() }
+  { 
+    id: "00000000-0000-0000-0000-000000000001", 
+    name: "Mai", 
+    avatarUrl: "/avatars/sunflower.png", 
+    parentId: "00000000-0000-0000-0000-000000000000", 
+    createdAt: new Date().toISOString() 
+  },
+  { 
+    id: "00000000-0000-0000-0000-000000000002", 
+    name: "Liam", 
+    avatarUrl: "/avatars/rocket.png", 
+    parentId: "00000000-0000-0000-0000-000000000000", 
+    createdAt: new Date().toISOString() 
+  }
 ];
 
 export const useAppStore = create<AppState>()(
@@ -86,6 +98,9 @@ export const useAppStore = create<AppState>()(
         const players = await fetchPlayers();
         if (players.length > 0) {
           set({ players, activePlayer: players[0] });
+        } else {
+          // No players in database, keep using defaults
+          console.log("No players found in database, using default players");
         }
       } catch (error) {
         console.error("Failed to load players, using defaults", error);

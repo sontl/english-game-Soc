@@ -1,12 +1,24 @@
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import type { PartOfSpeech, Word } from "@english-game/shared";
 import { createWord, fetchWords, requestAudio, requestImage } from "../services/api";
 import { useAppStore } from "../store/appStore";
 import SampleWordsManager from "../components/SampleWordsManager";
+import PlayerProgress from "../components/PlayerProgress";
+import { SeedDatabase } from "../components/SeedDatabase";
 
 const AdminDashboard = () => {
   const { week, setWords } = useAppStore();
+  const [isUnlocked, setIsUnlocked] = useState(false);
+  const [answer, setAnswer] = useState("");
+  
+  const mathChallenge = useMemo(() => {
+    const a = Math.floor(Math.random() * 10) + 1;
+    const b = Math.floor(Math.random() * 10) + 1;
+    const c = Math.floor(Math.random() * 5) + 1;
+    return { a, b, c, result: a + b - c };
+  }, []);
+
   const [form, setForm] = useState({
     text: "",
     transcription: "",
@@ -50,8 +62,52 @@ const AdminDashboard = () => {
     });
   };
 
+  const handleUnlock = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (Number(answer) === mathChallenge.result) {
+      setIsUnlocked(true);
+    } else {
+      alert("Wrong answer! Try again.");
+      setAnswer("");
+    }
+  };
+
+  if (!isUnlocked) {
+    return (
+      <div className="mx-auto flex min-h-screen max-w-md items-center justify-center">
+        <div className="w-full rounded-[28px] bg-white/80 p-8 shadow-2xl shadow-primary/15 backdrop-blur">
+          <h2 className="mb-6 text-center text-2xl font-bold">Admin Access</h2>
+          <form onSubmit={handleUnlock} className="flex flex-col gap-4">
+            <p className="text-center text-lg">
+              Solve this: {mathChallenge.a} + {mathChallenge.b} - {mathChallenge.c} = ?
+            </p>
+            <input
+              type="number"
+              value={answer}
+              onChange={(e) => setAnswer(e.target.value)}
+              className="rounded-xl border border-slate-200 px-4 py-3 text-center text-lg"
+              placeholder="Your answer"
+              autoFocus
+              required
+            />
+            <button
+              type="submit"
+              className="rounded-full bg-primary px-6 py-3 font-semibold text-white"
+            >
+              Enter
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto flex max-w-5xl flex-col gap-6 pb-10">
+      <section className="rounded-[28px] bg-white/80 p-6 shadow-2xl shadow-purple-500/15 backdrop-blur">
+        <SeedDatabase />
+      </section>
+
       <section className="rounded-[28px] bg-white/80 p-6 shadow-2xl shadow-primary/15 backdrop-blur">
         <h2 className="text-2xl font-bold">Add a new word</h2>
         <form className="mt-4 grid gap-3 md:grid-cols-2" onSubmit={handleSubmit}>
@@ -187,6 +243,11 @@ const AdminDashboard = () => {
             ))}
           </ul>
         )}
+      </section>
+
+      <section className="rounded-[28px] bg-white/80 p-6 shadow-2xl shadow-success/15 backdrop-blur">
+        <h2 className="mb-4 text-xl font-bold">Player Progress</h2>
+        <PlayerProgress />
       </section>
 
       <SampleWordsManager />

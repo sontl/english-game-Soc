@@ -45,7 +45,9 @@ const PlayerSelector = () => {
       setEditingId(null);
       setEditPlayerName("");
     } catch (error) {
-      alert("Failed to update player. Please try again.");
+      alert("Failed to update player. If this is a default player (Mai or Liam), please create your own player using the '+ Add Player' button to save progress.");
+      setEditingId(null);
+      setEditPlayerName("");
     } finally {
       setIsSubmitting(false);
     }
@@ -57,7 +59,7 @@ const PlayerSelector = () => {
     try {
       await removePlayer(id);
     } catch (error) {
-      alert("Failed to remove player. Please try again.");
+      alert("Failed to remove player. If this is a default player (Mai or Liam), it cannot be deleted. Create your own players instead!");
     }
   };
 
@@ -65,7 +67,9 @@ const PlayerSelector = () => {
     <div className="flex flex-col gap-4">
       <div>
         <h2 className="text-xl font-bold">Who is playing today?</h2>
-        <p className="text-sm text-slate-600">Tap your avatar to start learning.</p>
+        <p className="text-sm text-slate-600">
+          Tap your avatar to start learning. Create your own player to save progress!
+        </p>
       </div>
       <div className="flex flex-wrap gap-3">
         {players.map((player) => (

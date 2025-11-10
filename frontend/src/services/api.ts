@@ -243,3 +243,149 @@ export const deletePlayer = async (id: string): Promise<void> => {
     throw new Error("Failed to delete player");
   }
 };
+
+// Progress tracking
+export const updateProgress = async (playerId: string, wordId: string, increment: number = 1) => {
+  const response = await fetch(`${API_BASE}/progress`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify({
+      playerId,
+      wordId,
+      correctCount: increment
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to update progress");
+  }
+
+  return response.json();
+};
+
+export const getPlayerProgress = async (playerId: string) => {
+  const response = await fetch(`${API_BASE}/progress/${playerId}`, {
+    headers: {
+      ...getAuthHeaders()
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch progress");
+  }
+
+  const data = await response.json();
+  return data.progress;
+};
+
+// Session tracking
+export const createSession = async (playerId: string) => {
+  const response = await fetch(`${API_BASE}/sessions`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify({
+      playerId,
+      startedAt: new Date().toISOString()
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to create session");
+  }
+
+  const data = await response.json();
+  return data.session;
+};
+
+export const endSession = async (sessionId: string) => {
+  const response = await fetch(`${API_BASE}/sessions/${sessionId}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify({
+      endedAt: new Date().toISOString()
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to end session");
+  }
+
+  return response.json();
+};
+
+// Analytics
+export const logAnalyticsEvent = async (
+  type: "word_seen" | "played_game" | "replay_audio",
+  playerId: string,
+  gameId: string,
+  wordId?: string
+) => {
+  const response = await fetch(`${API_BASE}/analytics`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify({
+      type,
+      playerId,
+      gameId,
+      wordId,
+      timestamp: new Date().toISOString()
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to log analytics event");
+  }
+
+  return response.json();
+};
+
+// Adaptive word selection
+export const getAdaptiveWords = async (playerId: string, limit: number = 10) => {
+  const response = await fetch(`${API_BASE}/progress/schedule`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify({
+      playerId,
+      limit
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to get adaptive words");
+  }
+
+  const data = await response.json();
+  return data.schedule;
+};
+
+// Seed database with sample words
+export const seedWordsFromSample = async (): Promise<{ count: number }> => {
+  // Fetch the sample words from the public folder
+  const response = await fetch("/words.sample.json");
+  if (!response.ok) {
+    throw new Error("Failed to load sample words file");
+  }
+
+  const data = await response.json();
+  const words = (data.words as Word[]).map((word) => ({
+    ...word,
+    // Convert empty strings to undefined for URL fields
+    audioUrl: word.audioUrl || undefined,
+    imageUrl: word.imageUrl || undefined,
+    exampleSentence: word.exampleSentence || undefined
+  }));
+
+  // Send to the bulk upsert endpoint
+  const bulkResponse = await fetch(`${API_BASE}/words/bulk`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify({ words })
+  });
+
+  if (!bulkResponse.ok) {
+    throw new Error("Failed to seed words to database");
+  }
+
+  const result = await bulkResponse.json();
+  return { count: result.words.length };
+};
