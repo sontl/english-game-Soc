@@ -33,11 +33,11 @@ All issues have been resolved. Your application is now running successfully in D
 - **Command:** `npx tsx src/server.ts`
 
 ### Frontend
-- **Runtime:** Vite preview server
+- **Runtime:** `serve` static file server
 - **Build:** Static files in dist/
-- **Dependencies:** Full install (includes vite)
-- **Command:** `npm run preview`
-- **Host:** Accepts all hosts (configured)
+- **Dependencies:** serve (globally installed)
+- **Command:** `serve -s dist -l 4173`
+- **Host:** No restrictions (works with any domain)
 
 ## 🚀 Quick Start
 
@@ -186,19 +186,9 @@ docker compose logs backend
 ```
 
 ### Frontend shows "Blocked request"
-**Fixed!** Add your domain to `allowedHosts` in `frontend/vite.config.ts`:
+**Fixed!** We now use `serve` instead of vite preview, which has no host restrictions.
 
-```typescript
-preview: {
-  allowedHosts: [
-    'localhost',
-    'your-domain.com',
-    '.your-domain.com'  // For subdomains
-  ]
-}
-```
-
-Then rebuild: `docker compose up --build frontend`
+No configuration needed - it works with any domain out of the box!
 
 ### Database connection errors
 ```bash

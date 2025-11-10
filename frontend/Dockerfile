@@ -45,10 +45,11 @@ COPY --from=builder /app/frontend/package.json ./frontend/package.json
 COPY --from=builder /app/packages/shared/dist ./packages/shared/dist
 COPY --from=builder /app/packages/shared/package.json ./packages/shared/package.json
 
-# Install dependencies (vite is needed for preview server)
-RUN npm install
+# Install serve for production static file serving
+RUN npm install -g serve
 
 WORKDIR /app/frontend
 
 EXPOSE 4173
-CMD ["npm", "run", "preview", "--", "--host", "0.0.0.0", "--port", "4173"]
+# Use serve instead of vite preview (no host restrictions)
+CMD ["serve", "-s", "dist", "-l", "4173", "--no-port-switching"]

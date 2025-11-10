@@ -6,18 +6,19 @@ export default defineConfig({
   server: {
     port: 5173,
     open: true,
-    host: true
+    host: true,
+    hmr: {
+      clientPort: 5173
+    }
   },
   preview: {
     port: 4173,
-    host: true,
+    host: '0.0.0.0',  // Listen on all interfaces
     strictPort: true,
-    allowedHosts: [
-      'localhost',
-      '127.0.0.1',
-      'game.i4y.net',
-      '.i4y.net'  // Allow all subdomains of i4y.net
-    ]
+    cors: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
   },
   build: {
     sourcemap: true

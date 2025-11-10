@@ -221,23 +221,23 @@ CMD ["npx", "tsx", "src/server.ts"]
 **Note:** For true production deployment, you should serve the static files from `dist/` using nginx or another web server instead of using vite preview.
 
 
-### Frontend Preview Server Host Configuration
-**Issue:** Vite preview server blocks requests from unknown hosts for security.
+### Frontend Static File Serving
+**Issue:** Vite preview server blocks requests from unknown hosts for security and cannot be easily disabled.
 
-**Solution:** Configure Vite preview server with explicit allowed hosts in `vite.config.ts`:
+**Solution:** Use `serve` package instead of vite preview for production. This is a simple static file server with no host restrictions.
 
-```typescript
-preview: {
-  port: 4173,
-  host: true,        // Listen on all addresses
-  strictPort: true,  // Fail if port is already in use
-  allowedHosts: [
-    'localhost',
-    '127.0.0.1',
-    'game.i4y.net',
-    '.i4y.net'       // Allow all subdomains
-  ]
-}
+```dockerfile
+# Install serve for production static file serving
+RUN npm install -g serve
+
+# Use serve instead of vite preview
+CMD ["serve", "-s", "dist", "-l", "4173", "--no-port-switching"]
 ```
 
-**Important:** Add your custom domain to the `allowedHosts` array. Use a leading dot (`.domain.com`) to allow all subdomains.
+**Benefits:**
+- ✅ No host restrictions - works with any domain
+- ✅ Lightweight and fast
+- ✅ Production-ready
+- ✅ No configuration needed
+
+**Note:** Vite preview is designed for local testing, not production. Using `serve` or nginx is the recommended approach.

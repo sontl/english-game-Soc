@@ -6,6 +6,7 @@ Interactive HTML5 mini-games and authoring tools for weekly vocabulary practice.
 
 **🐳 Using Docker?** 
 - [Docker Final Status](DOCKER_FINAL_STATUS.md) - ✅ All working! Quick start here
+- [Vite Preview Fix](VITE_PREVIEW_FIX.md) - Fixed "Blocked request" issue
 - [Custom Domain Setup](CUSTOM_DOMAIN_SETUP.md) - Configure your domain (e.g., game.i4y.net)
 - [Docker Quick Reference](DOCKER_QUICK_REFERENCE.md) - Common commands
 - [Docker Setup Guide](DOCKER_SETUP.md) - Complete guide with troubleshooting
