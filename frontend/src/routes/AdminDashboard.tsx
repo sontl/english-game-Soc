@@ -3,6 +3,7 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 import type { PartOfSpeech, Word } from "@english-game/shared";
 import { createWord, fetchWords, requestAudio, requestImage } from "../services/api";
 import { useAppStore } from "../store/appStore";
+import SampleWordsManager from "../components/SampleWordsManager";
 
 const AdminDashboard = () => {
   const { week, setWords } = useAppStore();
@@ -187,6 +188,8 @@ const AdminDashboard = () => {
           </ul>
         )}
       </section>
+
+      <SampleWordsManager />
     </div>
   );
 };

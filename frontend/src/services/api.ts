@@ -2,6 +2,11 @@ import { Word } from "@english-game/shared";
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:4000/api";
 
+const getAuthHeaders = () => {
+  const token = import.meta.env.VITE_API_AUTH_TOKEN;
+  return token ? { Authorization: `Bearer ${token}` } : {};
+};
+
 export const fetchWords = async (week?: number): Promise<Word[]> => {
   const url = new URL(`${API_BASE}/words`);
   if (week !== undefined) {
@@ -9,7 +14,12 @@ export const fetchWords = async (week?: number): Promise<Word[]> => {
   }
 
   try {
-    const response = await fetch(url.toString(), { cache: "no-store" });
+    const response = await fetch(url.toString(), {
+      cache: "no-store",
+      headers: {
+        ...getAuthHeaders()
+      }
+    });
     if (!response.ok) {
       throw new Error("Failed to fetch words");
     }
@@ -27,14 +37,19 @@ export const fetchWords = async (week?: number): Promise<Word[]> => {
       return words;
     }
 
-    return words.filter((word) => word.level === week);
+    return words.filter((word) => {
+      if (word.term !== undefined && word.week !== undefined) {
+        return word.term * 100 + word.week === week;
+      }
+      return word.level === week;
+    });
   }
 };
 
 export const createWord = async (payload: Partial<Word>) => {
   const response = await fetch(`${API_BASE}/words`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
     body: JSON.stringify(payload)
   });
 
@@ -48,7 +63,7 @@ export const createWord = async (payload: Partial<Word>) => {
 export const requestImage = async (prompt: string, style?: string) => {
   const response = await fetch(`${API_BASE}/generate-image`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
     body: JSON.stringify({ prompt, style })
   });
   if (!response.ok) {
@@ -60,11 +75,93 @@ export const requestImage = async (prompt: string, style?: string) => {
 export const requestAudio = async (prompt: string, voice?: string) => {
   const response = await fetch(`${API_BASE}/generate-audio`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
     body: JSON.stringify({ prompt, voice })
   });
   if (!response.ok) {
     throw new Error("Failed to generate audio");
   }
   return response.json();
+};
+
+export const fetchSampleWords = async (): Promise<Word[]> => {
+  const response = await fetch(`${API_BASE}/sample-words`, {
+    headers: {
+      ...getAuthHeaders()
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to load sample words");
+  }
+
+  const data = await response.json();
+  return data.words as Word[];
+};
+
+export const createSampleWord = async (payload: Partial<Word>) => {
+  const response = await fetch(`${API_BASE}/sample-words`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify(payload)
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to create sample word");
+  }
+
+  const data = await response.json();
+  return data.word as Word;
+};
+
+export const updateSampleWord = async (id: string, payload: Partial<Word>) => {
+  const response = await fetch(`${API_BASE}/sample-words/${id}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+    body: JSON.stringify(payload)
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to update sample word");
+  }
+
+  const data = await response.json();
+  return data.word as Word;
+};
+
+export const deleteSampleWord = async (id: string) => {
+  const response = await fetch(`${API_BASE}/sample-words/${id}`, {
+    method: "DELETE",
+    headers: {
+      ...getAuthHeaders()
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to delete sample word");
+  }
+};
+
+export const uploadSampleWordMedia = async (
+  id: string,
+  file: File,
+  type: "image" | "audio"
+): Promise<Word> => {
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const response = await fetch(`${API_BASE}/sample-words/${id}/${type}`, {
+    method: "POST",
+    headers: {
+      ...getAuthHeaders()
+    },
+    body: formData
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to upload ${type}`);
+  }
+
+  const data = await response.json();
+  return data.word as Word;
 };

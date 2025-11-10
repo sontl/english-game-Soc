@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { useAppStore } from "../store/appStore";
 import { shuffle } from "../utils/random";
+import { playCelebration, playSuccessTone } from "../utils/sound";
 
 const RaceSpell = () => {
   const { words } = useAppStore();
@@ -26,7 +27,14 @@ const RaceSpell = () => {
   const handleLetter = (letter: string) => {
     const expected = targetWord[progress];
     if (letter === expected) {
-      setProgress((prev) => prev + 1);
+      playSuccessTone();
+      setProgress((prev) => {
+        const updated = prev + 1;
+        if (updated >= targetWord.length) {
+          playCelebration();
+        }
+        return updated;
+      });
       setTrail((prev) => [...prev, letter]);
       setMessage("Great! Keep racing.");
     } else {

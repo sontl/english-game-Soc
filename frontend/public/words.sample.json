@@ -6,12 +6,14 @@
       "pos": "particle",
       "transcription": "\u026af",
       "exampleSentence": "If it rains, we will play inside.",
-      "level": 4,
+      "level": 104,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=if",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-01-22T00:00:00.000Z",
-      "updatedAt": "2025-01-22T00:00:00.000Z"
+      "updatedAt": "2025-01-22T00:00:00.000Z",
+      "term": 1,
+      "week": 4
     },
     {
       "id": "65a86923-69d0-4fc6-b847-dde4bc9a2f6b",
@@ -19,12 +21,14 @@
       "pos": "verb",
       "transcription": "\u026az",
       "exampleSentence": "The sky is bright this morning.",
-      "level": 4,
+      "level": 104,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=is",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-01-22T00:00:00.000Z",
-      "updatedAt": "2025-01-22T00:00:00.000Z"
+      "updatedAt": "2025-01-22T00:00:00.000Z",
+      "term": 1,
+      "week": 4
     },
     {
       "id": "8acb57e4-8625-4ebc-9f8b-8f03c696fbe8",
@@ -32,12 +36,14 @@
       "pos": "pronoun",
       "transcription": "\u026at",
       "exampleSentence": "It is time to line up.",
-      "level": 4,
+      "level": 104,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=it",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-01-22T00:00:00.000Z",
-      "updatedAt": "2025-01-22T00:00:00.000Z"
+      "updatedAt": "2025-01-22T00:00:00.000Z",
+      "term": 1,
+      "week": 4
     },
     {
       "id": "fa7ac413-ab7e-4979-8eda-e240d497c543",
@@ -45,12 +51,14 @@
       "pos": "verb",
       "transcription": "\u00e6m",
       "exampleSentence": "I am ready for school.",
-      "level": 5,
+      "level": 105,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=am",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-01-31T00:00:00.000Z",
-      "updatedAt": "2025-01-31T00:00:00.000Z"
+      "updatedAt": "2025-01-31T00:00:00.000Z",
+      "term": 1,
+      "week": 5
     },
     {
       "id": "5e9787d8-5f3a-4496-837b-d91bfdc0e119",
@@ -58,12 +66,14 @@
       "pos": "particle",
       "transcription": "\u00e6z",
       "exampleSentence": "Smile as you say hello.",
-      "level": 5,
+      "level": 105,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=as",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-01-31T00:00:00.000Z",
-      "updatedAt": "2025-01-31T00:00:00.000Z"
+      "updatedAt": "2025-01-31T00:00:00.000Z",
+      "term": 1,
+      "week": 5
     },
     {
       "id": "cdb1d580-e59e-4741-b51b-b18acce2ae15",
@@ -71,12 +81,14 @@
       "pos": "preposition",
       "transcription": "\u00e6t",
       "exampleSentence": "Wait at the gate for your friend.",
-      "level": 5,
+      "level": 105,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=at",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-01-31T00:00:00.000Z",
-      "updatedAt": "2025-01-31T00:00:00.000Z"
+      "updatedAt": "2025-01-31T00:00:00.000Z",
+      "term": 1,
+      "week": 5
     },
     {
       "id": "676d5925-fff2-4ef3-8eb3-083ac6cf07f6",
@@ -84,12 +96,14 @@
       "pos": "pronoun",
       "transcription": "hi\u02d0",
       "exampleSentence": "He likes to read about dinosaurs.",
-      "level": 6,
+      "level": 106,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=he",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-05T00:00:00.000Z",
-      "updatedAt": "2025-02-05T00:00:00.000Z"
+      "updatedAt": "2025-02-05T00:00:00.000Z",
+      "term": 1,
+      "week": 6
     },
     {
       "id": "159cdf65-98b5-4d07-a3b2-47f0a0c15627",
@@ -97,12 +111,14 @@
       "pos": "pronoun",
       "transcription": "\u0283i\u02d0",
       "exampleSentence": "She sings a cheerful song.",
-      "level": 6,
+      "level": 106,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=she",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-05T00:00:00.000Z",
-      "updatedAt": "2025-02-05T00:00:00.000Z"
+      "updatedAt": "2025-02-05T00:00:00.000Z",
+      "term": 1,
+      "week": 6
     },
     {
       "id": "4fa5d324-2efc-4bbd-aab2-58f64f21f478",
@@ -110,12 +126,14 @@
       "pos": "pronoun",
       "transcription": "wi\u02d0",
       "exampleSentence": "We share the crayons kindly.",
-      "level": 6,
+      "level": 106,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=we",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-05T00:00:00.000Z",
-      "updatedAt": "2025-02-05T00:00:00.000Z"
+      "updatedAt": "2025-02-05T00:00:00.000Z",
+      "term": 1,
+      "week": 6
     },
     {
       "id": "c9aaf538-3528-4e37-9beb-fe26ca0a1f9e",
@@ -123,12 +141,14 @@
       "pos": "verb",
       "transcription": "bi\u02d0",
       "exampleSentence": "Be gentle with the classroom plants.",
-      "level": 7,
+      "level": 107,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=be",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-12T00:00:00.000Z",
-      "updatedAt": "2025-02-12T00:00:00.000Z"
+      "updatedAt": "2025-02-12T00:00:00.000Z",
+      "term": 1,
+      "week": 7
     },
     {
       "id": "1209ca81-e500-4f97-b378-43657039f8f7",
@@ -136,12 +156,14 @@
       "pos": "pronoun",
       "transcription": "mi\u02d0",
       "exampleSentence": "Can you sit next to me?",
-      "level": 7,
+      "level": 107,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=me",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-12T00:00:00.000Z",
-      "updatedAt": "2025-02-12T00:00:00.000Z"
+      "updatedAt": "2025-02-12T00:00:00.000Z",
+      "term": 1,
+      "week": 7
     },
     {
       "id": "845abf26-7461-4adf-921b-8c3e0f568f86",
@@ -149,12 +171,14 @@
       "pos": "determiner",
       "transcription": "ma\u026a",
       "exampleSentence": "My backpack hangs on the hook.",
-      "level": 7,
+      "level": 107,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=my",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-12T00:00:00.000Z",
-      "updatedAt": "2025-02-12T00:00:00.000Z"
+      "updatedAt": "2025-02-12T00:00:00.000Z",
+      "term": 1,
+      "week": 7
     },
     {
       "id": "6122d60e-10e4-449e-a34c-e47a777ef7a1",
@@ -162,12 +186,14 @@
       "pos": "preposition",
       "transcription": "\u028cv",
       "exampleSentence": "The bucket is full of sand.",
-      "level": 8,
+      "level": 108,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=of",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-19T00:00:00.000Z",
-      "updatedAt": "2025-02-19T00:00:00.000Z"
+      "updatedAt": "2025-02-19T00:00:00.000Z",
+      "term": 1,
+      "week": 8
     },
     {
       "id": "af80157b-0a62-4865-a41f-9d72c8a0999d",
@@ -175,12 +201,14 @@
       "pos": "preposition",
       "transcription": "\u0251n",
       "exampleSentence": "Put your hat on the peg.",
-      "level": 8,
+      "level": 108,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=on",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-19T00:00:00.000Z",
-      "updatedAt": "2025-02-19T00:00:00.000Z"
+      "updatedAt": "2025-02-19T00:00:00.000Z",
+      "term": 1,
+      "week": 8
     },
     {
       "id": "1e5e5375-da89-432e-8a8c-fd55d19f4709",
@@ -188,12 +216,14 @@
       "pos": "particle",
       "transcription": "\u0254r",
       "exampleSentence": "Would you like milk or juice?",
-      "level": 8,
+      "level": 108,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=or",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-19T00:00:00.000Z",
-      "updatedAt": "2025-02-19T00:00:00.000Z"
+      "updatedAt": "2025-02-19T00:00:00.000Z",
+      "term": 1,
+      "week": 8
     },
     {
       "id": "4ea6d7fd-5b92-41ba-a442-d7f6d0356841",
@@ -201,12 +231,14 @@
       "pos": "particle",
       "transcription": "\u00e6nd",
       "exampleSentence": "Wash your hands and face.",
-      "level": 9,
+      "level": 109,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=and",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-26T00:00:00.000Z",
-      "updatedAt": "2025-02-26T00:00:00.000Z"
+      "updatedAt": "2025-02-26T00:00:00.000Z",
+      "term": 1,
+      "week": 9
     },
     {
       "id": "da15a6a3-fd49-4b55-b5b2-baadd860998c",
@@ -214,12 +246,14 @@
       "pos": "determiner",
       "transcription": "\u00f0\u0259",
       "exampleSentence": "The puppy wags its tail.",
-      "level": 9,
+      "level": 109,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=the",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-26T00:00:00.000Z",
-      "updatedAt": "2025-02-26T00:00:00.000Z"
+      "updatedAt": "2025-02-26T00:00:00.000Z",
+      "term": 1,
+      "week": 9
     },
     {
       "id": "c7dae6fc-248e-4229-8bb4-eb9351b8a78b",
@@ -227,12 +261,14 @@
       "pos": "pronoun",
       "transcription": "ju\u02d0",
       "exampleSentence": "You can lead the line today.",
-      "level": 9,
+      "level": 109,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=you",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-02-26T00:00:00.000Z",
-      "updatedAt": "2025-02-26T00:00:00.000Z"
+      "updatedAt": "2025-02-26T00:00:00.000Z",
+      "term": 1,
+      "week": 9
     },
     {
       "id": "c95151f2-289a-4057-88f7-7f1aaee24e37",
@@ -240,12 +276,14 @@
       "pos": "verb",
       "transcription": "\u0251r",
       "exampleSentence": "We are making a painting.",
-      "level": 10,
+      "level": 110,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=are",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-03-05T00:00:00.000Z",
-      "updatedAt": "2025-03-05T00:00:00.000Z"
+      "updatedAt": "2025-03-05T00:00:00.000Z",
+      "term": 1,
+      "week": 10
     },
     {
       "id": "23554d44-d382-4425-a0a4-e7bd0983b682",
@@ -253,12 +291,14 @@
       "pos": "particle",
       "transcription": "b\u028ct",
       "exampleSentence": "I wanted to run, but it was wet.",
-      "level": 10,
+      "level": 110,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=but",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-03-05T00:00:00.000Z",
-      "updatedAt": "2025-03-05T00:00:00.000Z"
+      "updatedAt": "2025-03-05T00:00:00.000Z",
+      "term": 1,
+      "week": 10
     },
     {
       "id": "fc1d90a5-c952-4f93-b241-9374486a3e03",
@@ -266,12 +306,14 @@
       "pos": "verb",
       "transcription": "k\u00e6n",
       "exampleSentence": "I can tie my own shoes.",
-      "level": 10,
+      "level": 110,
       "imageUrl": "https://dummyimage.com/256x256/fec5bb/ffffff&text=can",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-03-05T00:00:00.000Z",
-      "updatedAt": "2025-03-05T00:00:00.000Z"
+      "updatedAt": "2025-03-05T00:00:00.000Z",
+      "term": 1,
+      "week": 10
     },
     {
       "id": "8cb6692c-a9f6-454b-af02-cc3b5d3c928e",
@@ -279,12 +321,14 @@
       "pos": "verb",
       "transcription": "\u0261o\u028a",
       "exampleSentence": "We go to art class now.",
-      "level": 14,
+      "level": 202,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=go",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-02T00:00:00.000Z",
-      "updatedAt": "2025-04-02T00:00:00.000Z"
+      "updatedAt": "2025-04-02T00:00:00.000Z",
+      "term": 2,
+      "week": 2
     },
     {
       "id": "0c6a4045-2f14-4944-96cd-d43c60ec81a3",
@@ -292,12 +336,14 @@
       "pos": "noun",
       "transcription": "h\u00e6t",
       "exampleSentence": "His warm hat has a pom-pom.",
-      "level": 14,
+      "level": 202,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=hat",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-02T00:00:00.000Z",
-      "updatedAt": "2025-04-02T00:00:00.000Z"
+      "updatedAt": "2025-04-02T00:00:00.000Z",
+      "term": 2,
+      "week": 2
     },
     {
       "id": "df4895f4-a9ab-411d-9785-ec7252f747b3",
@@ -305,12 +351,14 @@
       "pos": "noun",
       "transcription": "m\u00e6t",
       "exampleSentence": "Wipe your feet on the mat.",
-      "level": 14,
+      "level": 202,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=mat",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-02T00:00:00.000Z",
-      "updatedAt": "2025-04-02T00:00:00.000Z"
+      "updatedAt": "2025-04-02T00:00:00.000Z",
+      "term": 2,
+      "week": 2
     },
     {
       "id": "1e628bb9-0349-445a-862b-edde3726d831",
@@ -318,12 +366,14 @@
       "pos": "adverb",
       "transcription": "so\u028a",
       "exampleSentence": "The soup is so tasty.",
-      "level": 14,
+      "level": 202,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=so",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-02T00:00:00.000Z",
-      "updatedAt": "2025-04-02T00:00:00.000Z"
+      "updatedAt": "2025-04-02T00:00:00.000Z",
+      "term": 2,
+      "week": 2
     },
     {
       "id": "6c8ce256-7a2f-47ba-a58d-b22f521c64ba",
@@ -331,12 +381,14 @@
       "pos": "pronoun",
       "transcription": "h\u025c\u02d0r",
       "exampleSentence": "She gave her friend a note.",
-      "level": 15,
+      "level": 203,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=her",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-09T00:00:00.000Z",
-      "updatedAt": "2025-04-09T00:00:00.000Z"
+      "updatedAt": "2025-04-09T00:00:00.000Z",
+      "term": 2,
+      "week": 3
     },
     {
       "id": "bffcdc65-3506-49bd-a611-2bf0a2d03db8",
@@ -344,12 +396,14 @@
       "pos": "determiner",
       "transcription": "h\u026az",
       "exampleSentence": "He zipped up his coat.",
-      "level": 15,
+      "level": 203,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=his",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-09T00:00:00.000Z",
-      "updatedAt": "2025-04-09T00:00:00.000Z"
+      "updatedAt": "2025-04-09T00:00:00.000Z",
+      "term": 2,
+      "week": 3
     },
     {
       "id": "0cc63f28-1879-4898-9693-e355331c2e2b",
@@ -357,12 +411,14 @@
       "pos": "verb",
       "transcription": "m\u025bt",
       "exampleSentence": "We met our new classmate today.",
-      "level": 15,
+      "level": 203,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=met",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-09T00:00:00.000Z",
-      "updatedAt": "2025-04-09T00:00:00.000Z"
+      "updatedAt": "2025-04-09T00:00:00.000Z",
+      "term": 2,
+      "week": 3
     },
     {
       "id": "ce4d2b84-1e7b-4679-b2df-4e3c6e7cbde0",
@@ -370,12 +426,14 @@
       "pos": "noun",
       "transcription": "p\u025bt",
       "exampleSentence": "Their pet bunny hops softly.",
-      "level": 15,
+      "level": 203,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=pet",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-09T00:00:00.000Z",
-      "updatedAt": "2025-04-09T00:00:00.000Z"
+      "updatedAt": "2025-04-09T00:00:00.000Z",
+      "term": 2,
+      "week": 3
     },
     {
       "id": "b1c6785d-72f7-41d4-b2cc-23d1136babb9",
@@ -383,12 +441,14 @@
       "pos": "verb",
       "transcription": "f\u026at",
       "exampleSentence": "These gloves fit your hands.",
-      "level": 16,
+      "level": 204,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=fit",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-16T00:00:00.000Z",
-      "updatedAt": "2025-04-16T00:00:00.000Z"
+      "updatedAt": "2025-04-16T00:00:00.000Z",
+      "term": 2,
+      "week": 4
     },
     {
       "id": "f88b2d54-81de-46eb-adbc-6df6f5666fcf",
@@ -396,12 +456,14 @@
       "pos": "preposition",
       "transcription": "\u028cv",
       "exampleSentence": "Draw a picture of your family.",
-      "level": 16,
+      "level": 204,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=of",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-16T00:00:00.000Z",
-      "updatedAt": "2025-04-16T00:00:00.000Z"
+      "updatedAt": "2025-04-16T00:00:00.000Z",
+      "term": 2,
+      "week": 4
     },
     {
       "id": "2186da50-5fd7-4170-8dfa-97eccd127a0b",
@@ -409,12 +471,14 @@
       "pos": "particle",
       "transcription": "\u0254r",
       "exampleSentence": "Do you want crayons or markers?",
-      "level": 16,
+      "level": 204,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=or",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-16T00:00:00.000Z",
-      "updatedAt": "2025-04-16T00:00:00.000Z"
+      "updatedAt": "2025-04-16T00:00:00.000Z",
+      "term": 2,
+      "week": 4
     },
     {
       "id": "4334347b-fb74-441d-8398-76c06bf35fa9",
@@ -422,12 +486,14 @@
       "pos": "verb",
       "transcription": "s\u026at",
       "exampleSentence": "Please sit on the carpet square.",
-      "level": 16,
+      "level": 204,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=sit",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-16T00:00:00.000Z",
-      "updatedAt": "2025-04-16T00:00:00.000Z"
+      "updatedAt": "2025-04-16T00:00:00.000Z",
+      "term": 2,
+      "week": 4
     },
     {
       "id": "2e679e52-f6ad-49ab-ab46-329f1e131a6f",
@@ -435,12 +501,14 @@
       "pos": "noun",
       "transcription": "k\u0251t",
       "exampleSentence": "The doll sleeps on the tiny cot.",
-      "level": 17,
+      "level": 205,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=cot",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-23T00:00:00.000Z",
-      "updatedAt": "2025-04-23T00:00:00.000Z"
+      "updatedAt": "2025-04-23T00:00:00.000Z",
+      "term": 2,
+      "week": 5
     },
     {
       "id": "98e1d9c7-74e4-4362-a775-a364d9bd3f0a",
@@ -448,12 +516,14 @@
       "pos": "adjective",
       "transcription": "h\u0251t",
       "exampleSentence": "Be careful, the cocoa is hot.",
-      "level": 17,
+      "level": 205,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=hot",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-23T00:00:00.000Z",
-      "updatedAt": "2025-04-23T00:00:00.000Z"
+      "updatedAt": "2025-04-23T00:00:00.000Z",
+      "term": 2,
+      "week": 5
     },
     {
       "id": "3f889aab-8ef7-4fbf-beae-5350b8d5fd2e",
@@ -461,12 +531,14 @@
       "pos": "determiner",
       "transcription": "\u00f0\u00e6t",
       "exampleSentence": "That kite soars high.",
-      "level": 17,
+      "level": 205,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=that",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-23T00:00:00.000Z",
-      "updatedAt": "2025-04-23T00:00:00.000Z"
+      "updatedAt": "2025-04-23T00:00:00.000Z",
+      "term": 2,
+      "week": 5
     },
     {
       "id": "37a5a6b1-d4cd-4d3a-8e75-3a6e08e19711",
@@ -474,12 +546,14 @@
       "pos": "determiner",
       "transcription": "\u00f0\u026as",
       "exampleSentence": "This sticker is very shiny.",
-      "level": 17,
+      "level": 205,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=this",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-23T00:00:00.000Z",
-      "updatedAt": "2025-04-23T00:00:00.000Z"
+      "updatedAt": "2025-04-23T00:00:00.000Z",
+      "term": 2,
+      "week": 5
     },
     {
       "id": "d2553f78-b04a-4dc6-aa98-c425d7cf7969",
@@ -487,12 +561,14 @@
       "pos": "verb",
       "transcription": "k\u028ct",
       "exampleSentence": "Cut the paper along the line.",
-      "level": 18,
+      "level": 206,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=cut",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-30T00:00:00.000Z",
-      "updatedAt": "2025-04-30T00:00:00.000Z"
+      "updatedAt": "2025-04-30T00:00:00.000Z",
+      "term": 2,
+      "week": 6
     },
     {
       "id": "2301d347-36f5-447a-8b6f-81d3710ff371",
@@ -500,12 +576,14 @@
       "pos": "noun",
       "transcription": "n\u028ct",
       "exampleSentence": "A squirrel cracked the nut.",
-      "level": 18,
+      "level": 206,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=nut",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-30T00:00:00.000Z",
-      "updatedAt": "2025-04-30T00:00:00.000Z"
+      "updatedAt": "2025-04-30T00:00:00.000Z",
+      "term": 2,
+      "week": 6
     },
     {
       "id": "0b6aa1e8-42d1-420e-b558-f21a7e01cd03",
@@ -513,12 +591,14 @@
       "pos": "determiner",
       "transcription": "j\u0254\u02d0r",
       "exampleSentence": "Remember to close your locker.",
-      "level": 18,
+      "level": 206,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=your",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-30T00:00:00.000Z",
-      "updatedAt": "2025-04-30T00:00:00.000Z"
+      "updatedAt": "2025-04-30T00:00:00.000Z",
+      "term": 2,
+      "week": 6
     },
     {
       "id": "143f9df3-ce09-44f3-9abc-9e7d893f835c",
@@ -526,12 +606,14 @@
       "pos": "pronoun",
       "transcription": "j\u0254\u02d0rz",
       "exampleSentence": "Those pencils are yours to keep.",
-      "level": 18,
+      "level": 206,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=yours",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-04-30T00:00:00.000Z",
-      "updatedAt": "2025-04-30T00:00:00.000Z"
+      "updatedAt": "2025-04-30T00:00:00.000Z",
+      "term": 2,
+      "week": 6
     },
     {
       "id": "e191a029-f8ef-415d-9949-966e8e13a25a",
@@ -539,12 +621,14 @@
       "pos": "noun",
       "transcription": "d\u0292\u00e6m",
       "exampleSentence": "Spread jam on the toast.",
-      "level": 19,
+      "level": 207,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=jam",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-07T00:00:00.000Z",
-      "updatedAt": "2025-05-07T00:00:00.000Z"
+      "updatedAt": "2025-05-07T00:00:00.000Z",
+      "term": 2,
+      "week": 7
     },
     {
       "id": "ec28c4d4-3864-466b-b76c-38ccd651119e",
@@ -552,12 +636,14 @@
       "pos": "verb",
       "transcription": "la\u026ak",
       "exampleSentence": "I like to dance in music class.",
-      "level": 19,
+      "level": 207,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=like",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-07T00:00:00.000Z",
-      "updatedAt": "2025-05-07T00:00:00.000Z"
+      "updatedAt": "2025-05-07T00:00:00.000Z",
+      "term": 2,
+      "week": 7
     },
     {
       "id": "91dbb162-7915-4e01-a559-e5fdf1d9bf24",
@@ -565,12 +651,14 @@
       "pos": "verb",
       "transcription": "l\u028cv",
       "exampleSentence": "We love reading stories together.",
-      "level": 19,
+      "level": 207,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=love",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-07T00:00:00.000Z",
-      "updatedAt": "2025-05-07T00:00:00.000Z"
+      "updatedAt": "2025-05-07T00:00:00.000Z",
+      "term": 2,
+      "week": 7
     },
     {
       "id": "8599268b-13ba-4908-afcf-1a4e3feeca78",
@@ -578,12 +666,14 @@
       "pos": "noun",
       "transcription": "j\u00e6m",
       "exampleSentence": "We baked a sweet yam.",
-      "level": 19,
+      "level": 207,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=yam",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-07T00:00:00.000Z",
-      "updatedAt": "2025-05-07T00:00:00.000Z"
+      "updatedAt": "2025-05-07T00:00:00.000Z",
+      "term": 2,
+      "week": 7
     },
     {
       "id": "98c57ccc-6588-4f4a-998a-f05d96e7754c",
@@ -591,12 +681,14 @@
       "pos": "noun",
       "transcription": "h\u025bn",
       "exampleSentence": "The hen clucks for her chicks.",
-      "level": 20,
+      "level": 208,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=hen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-14T00:00:00.000Z",
-      "updatedAt": "2025-05-14T00:00:00.000Z"
+      "updatedAt": "2025-05-14T00:00:00.000Z",
+      "term": 2,
+      "week": 8
     },
     {
       "id": "a97b3f85-b93c-4aba-8058-3b4c4e079fc8",
@@ -604,12 +696,14 @@
       "pos": "noun",
       "transcription": "p\u025bn",
       "exampleSentence": "Put the cap on your pen.",
-      "level": 20,
+      "level": 208,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=pen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-14T00:00:00.000Z",
-      "updatedAt": "2025-05-14T00:00:00.000Z"
+      "updatedAt": "2025-05-14T00:00:00.000Z",
+      "term": 2,
+      "week": 8
     },
     {
       "id": "de283e80-c9ff-4a89-9241-cf87995b69fe",
@@ -617,12 +711,14 @@
       "pos": "adverb",
       "transcription": "\u00f0\u025bn",
       "exampleSentence": "Write your name and then draw.",
-      "level": 20,
+      "level": 208,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=then",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-14T00:00:00.000Z",
-      "updatedAt": "2025-05-14T00:00:00.000Z"
+      "updatedAt": "2025-05-14T00:00:00.000Z",
+      "term": 2,
+      "week": 8
     },
     {
       "id": "0654905a-59d4-4eb5-9e70-7ad720789d4e",
@@ -630,12 +726,14 @@
       "pos": "pronoun",
       "transcription": "\u00f0e\u026a",
       "exampleSentence": "They play kindly with everyone.",
-      "level": 20,
+      "level": 208,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=they",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-14T00:00:00.000Z",
-      "updatedAt": "2025-05-14T00:00:00.000Z"
+      "updatedAt": "2025-05-14T00:00:00.000Z",
+      "term": 2,
+      "week": 8
     },
     {
       "id": "84b56253-d489-4334-acde-54956af72e7a",
@@ -643,12 +741,14 @@
       "pos": "verb",
       "transcription": "d\u026a\u0261",
       "exampleSentence": "Dig a little hole for the seed.",
-      "level": 21,
+      "level": 209,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=dig",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-21T00:00:00.000Z",
-      "updatedAt": "2025-05-21T00:00:00.000Z"
+      "updatedAt": "2025-05-21T00:00:00.000Z",
+      "term": 2,
+      "week": 9
     },
     {
       "id": "103f403e-2b1b-41c3-9bf1-b7176d392731",
@@ -656,12 +756,14 @@
       "pos": "verb",
       "transcription": "h\u00e6z",
       "exampleSentence": "She has a bright red lunchbox.",
-      "level": 21,
+      "level": 209,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=has",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-21T00:00:00.000Z",
-      "updatedAt": "2025-05-21T00:00:00.000Z"
+      "updatedAt": "2025-05-21T00:00:00.000Z",
+      "term": 2,
+      "week": 9
     },
     {
       "id": "82febd6b-c78f-4ccd-84ee-675998983589",
@@ -669,12 +771,14 @@
       "pos": "verb",
       "transcription": "h\u00e6v",
       "exampleSentence": "We have time for one more song.",
-      "level": 21,
+      "level": 209,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=have",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-21T00:00:00.000Z",
-      "updatedAt": "2025-05-21T00:00:00.000Z"
+      "updatedAt": "2025-05-21T00:00:00.000Z",
+      "term": 2,
+      "week": 9
     },
     {
       "id": "937e6804-04d8-4148-ae8c-ef9e2e8e23c8",
@@ -682,12 +786,14 @@
       "pos": "noun",
       "transcription": "p\u026a\u0261",
       "exampleSentence": "The pig splashes in the mud.",
-      "level": 21,
+      "level": 209,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=pig",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-21T00:00:00.000Z",
-      "updatedAt": "2025-05-21T00:00:00.000Z"
+      "updatedAt": "2025-05-21T00:00:00.000Z",
+      "term": 2,
+      "week": 9
     },
     {
       "id": "fab532c9-5233-4fa0-af4c-600cb099825d",
@@ -695,12 +801,14 @@
       "pos": "noun",
       "transcription": "d\u0254\u0261",
       "exampleSentence": "The dog fetches the ball.",
-      "level": 22,
+      "level": 210,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=dog",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-28T00:00:00.000Z",
-      "updatedAt": "2025-05-28T00:00:00.000Z"
+      "updatedAt": "2025-05-28T00:00:00.000Z",
+      "term": 2,
+      "week": 10
     },
     {
       "id": "74062f06-d085-4059-a444-878271dc27f2",
@@ -708,12 +816,14 @@
       "pos": "preposition",
       "transcription": "f\u0254r",
       "exampleSentence": "Save a seat for Ava.",
-      "level": 22,
+      "level": 210,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=for",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-28T00:00:00.000Z",
-      "updatedAt": "2025-05-28T00:00:00.000Z"
+      "updatedAt": "2025-05-28T00:00:00.000Z",
+      "term": 2,
+      "week": 10
     },
     {
       "id": "2bf77cd3-06a2-4d6b-9609-6e6f1693fdb3",
@@ -721,12 +831,14 @@
       "pos": "noun",
       "transcription": "l\u0254\u0261",
       "exampleSentence": "A frog rests on the log.",
-      "level": 22,
+      "level": 210,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=log",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-28T00:00:00.000Z",
-      "updatedAt": "2025-05-28T00:00:00.000Z"
+      "updatedAt": "2025-05-28T00:00:00.000Z",
+      "term": 2,
+      "week": 10
     },
     {
       "id": "8362fddc-a987-461c-8a17-4239e8775cc9",
@@ -734,12 +846,14 @@
       "pos": "preposition",
       "transcription": "w\u026a\u00f0",
       "exampleSentence": "Come play with the blocks.",
-      "level": 22,
+      "level": 210,
       "imageUrl": "https://dummyimage.com/256x256/cfe1ff/ffffff&text=with",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-05-28T00:00:00.000Z",
-      "updatedAt": "2025-05-28T00:00:00.000Z"
+      "updatedAt": "2025-05-28T00:00:00.000Z",
+      "term": 2,
+      "week": 10
     },
     {
       "id": "fce9e52c-7a14-4f55-8485-77648927033f",
@@ -747,12 +861,14 @@
       "pos": "noun",
       "transcription": "b\u00e6\u0261",
       "exampleSentence": "Put your library books in the bag.",
-      "level": 28,
+      "level": 302,
       "imageUrl": "https://dummyimage.com/256x256/8ecae6/ffffff&text=bag",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-09T00:00:00.000Z",
-      "updatedAt": "2025-07-09T00:00:00.000Z"
+      "updatedAt": "2025-07-09T00:00:00.000Z",
+      "term": 3,
+      "week": 2
     },
     {
       "id": "4f42239a-f6a7-4544-8e23-3ab6f47bf6ee",
@@ -760,12 +876,14 @@
       "pos": "noun",
       "transcription": "f\u0254\u02d0l",
       "exampleSentence": "Watch the leaves fall gently to the ground.",
-      "level": 28,
+      "level": 302,
       "imageUrl": "https://dummyimage.com/256x256/8ecae6/ffffff&text=fall",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-09T00:00:00.000Z",
-      "updatedAt": "2025-07-09T00:00:00.000Z"
+      "updatedAt": "2025-07-09T00:00:00.000Z",
+      "term": 3,
+      "week": 2
     },
     {
       "id": "0c0cfee9-7d7f-4bb9-b273-87f3c39d6920",
@@ -773,12 +891,14 @@
       "pos": "noun",
       "transcription": "r\u00e6\u0261",
       "exampleSentence": "Wipe the table with a soft rag.",
-      "level": 28,
+      "level": 302,
       "imageUrl": "https://dummyimage.com/256x256/8ecae6/ffffff&text=rag",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-09T00:00:00.000Z",
-      "updatedAt": "2025-07-09T00:00:00.000Z"
+      "updatedAt": "2025-07-09T00:00:00.000Z",
+      "term": 3,
+      "week": 2
     },
     {
       "id": "e19ebe63-73c1-49b5-9bb9-5f11f630cd4b",
@@ -786,12 +906,14 @@
       "pos": "noun",
       "transcription": "spr\u026a\u014b",
       "exampleSentence": "Bright flowers bloom in spring.",
-      "level": 28,
+      "level": 302,
       "imageUrl": "https://dummyimage.com/256x256/8ecae6/ffffff&text=spring",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-09T00:00:00.000Z",
-      "updatedAt": "2025-07-09T00:00:00.000Z"
+      "updatedAt": "2025-07-09T00:00:00.000Z",
+      "term": 3,
+      "week": 2
     },
     {
       "id": "6092076c-a537-45e6-a70e-f649876f535d",
@@ -799,12 +921,14 @@
       "pos": "pronoun",
       "transcription": "\u00f0\u025bm",
       "exampleSentence": "Grandma baked cookies and gave them to us.",
-      "level": 28,
+      "level": 302,
       "imageUrl": "https://dummyimage.com/256x256/8ecae6/ffffff&text=them",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-09T00:00:00.000Z",
-      "updatedAt": "2025-07-09T00:00:00.000Z"
+      "updatedAt": "2025-07-09T00:00:00.000Z",
+      "term": 3,
+      "week": 2
     },
     {
       "id": "81226789-0de6-46c5-b786-d0c935ad1041",
@@ -812,12 +936,14 @@
       "pos": "verb",
       "transcription": "\u0261\u025bt",
       "exampleSentence": "Get your crayons from the shelf.",
-      "level": 29,
+      "level": 303,
       "imageUrl": "https://dummyimage.com/256x256/ffb703/ffffff&text=get",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-16T00:00:00.000Z",
-      "updatedAt": "2025-07-16T00:00:00.000Z"
+      "updatedAt": "2025-07-16T00:00:00.000Z",
+      "term": 3,
+      "week": 3
     },
     {
       "id": "9d16204c-c1d8-4eda-9ecc-ec1aebcfbe48",
@@ -825,12 +951,14 @@
       "pos": "verb",
       "transcription": "s\u025bt",
       "exampleSentence": "Set the cups on the picnic table.",
-      "level": 29,
+      "level": 303,
       "imageUrl": "https://dummyimage.com/256x256/ffb703/ffffff&text=set",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-16T00:00:00.000Z",
-      "updatedAt": "2025-07-16T00:00:00.000Z"
+      "updatedAt": "2025-07-16T00:00:00.000Z",
+      "term": 3,
+      "week": 3
     },
     {
       "id": "6a25f192-fb00-42d0-ad1b-cb3cc2886fb9",
@@ -838,12 +966,14 @@
       "pos": "noun",
       "transcription": "\u02c8s\u028cm\u0259r",
       "exampleSentence": "We swim at the lake in summer.",
-      "level": 29,
+      "level": 303,
       "imageUrl": "https://dummyimage.com/256x256/ffb703/ffffff&text=summer",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-16T00:00:00.000Z",
-      "updatedAt": "2025-07-16T00:00:00.000Z"
+      "updatedAt": "2025-07-16T00:00:00.000Z",
+      "term": 3,
+      "week": 3
     },
     {
       "id": "55488dd3-2678-4a7b-bd0d-c26b7ca9499a",
@@ -851,12 +981,14 @@
       "pos": "adverb",
       "transcription": "\u00f0\u025bn",
       "exampleSentence": "Finish your puzzle, then we can read.",
-      "level": 29,
+      "level": 303,
       "imageUrl": "https://dummyimage.com/256x256/ffb703/ffffff&text=then",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-16T00:00:00.000Z",
-      "updatedAt": "2025-07-16T00:00:00.000Z"
+      "updatedAt": "2025-07-16T00:00:00.000Z",
+      "term": 3,
+      "week": 3
     },
     {
       "id": "1d8956ff-8658-4cdb-879d-ffd627a77ac1",
@@ -864,12 +996,14 @@
       "pos": "noun",
       "transcription": "\u02c8w\u026ant\u0259r",
       "exampleSentence": "In winter we build a snowman.",
-      "level": 29,
+      "level": 303,
       "imageUrl": "https://dummyimage.com/256x256/ffb703/ffffff&text=winter",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-16T00:00:00.000Z",
-      "updatedAt": "2025-07-16T00:00:00.000Z"
+      "updatedAt": "2025-07-16T00:00:00.000Z",
+      "term": 3,
+      "week": 3
     },
     {
       "id": "96dee5c2-caba-4ed1-8ca9-58917baf161e",
@@ -877,12 +1011,14 @@
       "pos": "adjective",
       "transcription": "b\u026a\u0261",
       "exampleSentence": "That big balloon floats above us.",
-      "level": 30,
+      "level": 304,
       "imageUrl": "https://dummyimage.com/256x256/219ebc/ffffff&text=big",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-23T00:00:00.000Z",
-      "updatedAt": "2025-07-23T00:00:00.000Z"
+      "updatedAt": "2025-07-23T00:00:00.000Z",
+      "term": 3,
+      "week": 4
     },
     {
       "id": "58794a6c-831e-4b74-b21e-377fd663e24b",
@@ -890,12 +1026,14 @@
       "pos": "noun",
       "transcription": "\u02c8p\u025bt\u0259l",
       "exampleSentence": "Each petal on the flower is soft.",
-      "level": 30,
+      "level": 304,
       "imageUrl": "https://dummyimage.com/256x256/219ebc/ffffff&text=petal",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-23T00:00:00.000Z",
-      "updatedAt": "2025-07-23T00:00:00.000Z"
+      "updatedAt": "2025-07-23T00:00:00.000Z",
+      "term": 3,
+      "week": 4
     },
     {
       "id": "3b8ca02a-58b0-42a8-bbdf-b061fc45dc74",
@@ -903,12 +1041,14 @@
       "pos": "noun",
       "transcription": "ru\u02d0ts",
       "exampleSentence": "Water helps the roots stay strong.",
-      "level": 30,
+      "level": 304,
       "imageUrl": "https://dummyimage.com/256x256/219ebc/ffffff&text=roots",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-23T00:00:00.000Z",
-      "updatedAt": "2025-07-23T00:00:00.000Z"
+      "updatedAt": "2025-07-23T00:00:00.000Z",
+      "term": 3,
+      "week": 4
     },
     {
       "id": "871b99f8-e2db-4039-bd5e-09ac71be7ba4",
@@ -916,12 +1056,14 @@
       "pos": "pronoun",
       "transcription": "\u00f0e\u026a",
       "exampleSentence": "They wave hello to their friends.",
-      "level": 30,
+      "level": 304,
       "imageUrl": "https://dummyimage.com/256x256/219ebc/ffffff&text=they",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-23T00:00:00.000Z",
-      "updatedAt": "2025-07-23T00:00:00.000Z"
+      "updatedAt": "2025-07-23T00:00:00.000Z",
+      "term": 3,
+      "week": 4
     },
     {
       "id": "4852727c-cd9f-4700-b098-311c496ca261",
@@ -929,12 +1071,14 @@
       "pos": "noun",
       "transcription": "w\u026a\u0261",
       "exampleSentence": "The clown wears a bright wig.",
-      "level": 30,
+      "level": 304,
       "imageUrl": "https://dummyimage.com/256x256/219ebc/ffffff&text=wig",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-23T00:00:00.000Z",
-      "updatedAt": "2025-07-23T00:00:00.000Z"
+      "updatedAt": "2025-07-23T00:00:00.000Z",
+      "term": 3,
+      "week": 4
     },
     {
       "id": "2d051091-9c30-465b-84c8-648e0615ca69",
@@ -942,12 +1086,14 @@
       "pos": "noun",
       "transcription": "b\u0251\u02d0ks",
       "exampleSentence": "Place the toys back in the box.",
-      "level": 31,
+      "level": 305,
       "imageUrl": "https://dummyimage.com/256x256/fb8500/ffffff&text=box",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-30T00:00:00.000Z",
-      "updatedAt": "2025-07-30T00:00:00.000Z"
+      "updatedAt": "2025-07-30T00:00:00.000Z",
+      "term": 3,
+      "week": 5
     },
     {
       "id": "4dc798d5-89ea-4e0f-bca0-a70e44a95b28",
@@ -955,12 +1101,14 @@
       "pos": "noun",
       "transcription": "f\u0251\u02d0ks",
       "exampleSentence": "A clever fox dashed past the trees.",
-      "level": 31,
+      "level": 305,
       "imageUrl": "https://dummyimage.com/256x256/fb8500/ffffff&text=fox",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-30T00:00:00.000Z",
-      "updatedAt": "2025-07-30T00:00:00.000Z"
+      "updatedAt": "2025-07-30T00:00:00.000Z",
+      "term": 3,
+      "week": 5
     },
     {
       "id": "f93a8ae4-3f06-4eb5-bd96-b8c632a6c763",
@@ -968,12 +1116,14 @@
       "pos": "noun",
       "transcription": "s\u0254\u026al",
       "exampleSentence": "Dig in the soil to plant seeds.",
-      "level": 31,
+      "level": 305,
       "imageUrl": "https://dummyimage.com/256x256/fb8500/ffffff&text=soil",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-30T00:00:00.000Z",
-      "updatedAt": "2025-07-30T00:00:00.000Z"
+      "updatedAt": "2025-07-30T00:00:00.000Z",
+      "term": 3,
+      "week": 5
     },
     {
       "id": "20f352d0-0221-42fc-9451-30351bba11b4",
@@ -981,12 +1131,14 @@
       "pos": "noun",
       "transcription": "s\u028cn",
       "exampleSentence": "The warm sun shines on the garden.",
-      "level": 31,
+      "level": 305,
       "imageUrl": "https://dummyimage.com/256x256/fb8500/ffffff&text=sun",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-30T00:00:00.000Z",
-      "updatedAt": "2025-07-30T00:00:00.000Z"
+      "updatedAt": "2025-07-30T00:00:00.000Z",
+      "term": 3,
+      "week": 5
     },
     {
       "id": "f324cd70-c96e-4e7b-89b3-0c6e8e266a46",
@@ -994,12 +1146,14 @@
       "pos": "pronoun",
       "transcription": "w\u028ct",
       "exampleSentence": "What game shall we play today?",
-      "level": 31,
+      "level": 305,
       "imageUrl": "https://dummyimage.com/256x256/fb8500/ffffff&text=what",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-07-30T00:00:00.000Z",
-      "updatedAt": "2025-07-30T00:00:00.000Z"
+      "updatedAt": "2025-07-30T00:00:00.000Z",
+      "term": 3,
+      "week": 5
     },
     {
       "id": "d51c4e44-8753-4092-87dc-53b389fc756e",
@@ -1007,12 +1161,14 @@
       "pos": "noun",
       "transcription": "pl\u00e6nt",
       "exampleSentence": "Water your plant so it stays green.",
-      "level": 32,
+      "level": 306,
       "imageUrl": "https://dummyimage.com/256x256/2a9d8f/ffffff&text=plant",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-06T00:00:00.000Z",
-      "updatedAt": "2025-08-06T00:00:00.000Z"
+      "updatedAt": "2025-08-06T00:00:00.000Z",
+      "term": 3,
+      "week": 6
     },
     {
       "id": "26c49dc1-1984-4df6-b189-9778ef7b740c",
@@ -1020,12 +1176,14 @@
       "pos": "verb",
       "transcription": "r\u028cb",
       "exampleSentence": "Rub your hands together to warm them.",
-      "level": 32,
+      "level": 306,
       "imageUrl": "https://dummyimage.com/256x256/2a9d8f/ffffff&text=rub",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-06T00:00:00.000Z",
-      "updatedAt": "2025-08-06T00:00:00.000Z"
+      "updatedAt": "2025-08-06T00:00:00.000Z",
+      "term": 3,
+      "week": 6
     },
     {
       "id": "5beb000c-e87b-4007-9933-d1d096672632",
@@ -1033,12 +1191,14 @@
       "pos": "noun",
       "transcription": "tri\u02d0",
       "exampleSentence": "A tall tree gives shade on hot days.",
-      "level": 32,
+      "level": 306,
       "imageUrl": "https://dummyimage.com/256x256/2a9d8f/ffffff&text=tree",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-06T00:00:00.000Z",
-      "updatedAt": "2025-08-06T00:00:00.000Z"
+      "updatedAt": "2025-08-06T00:00:00.000Z",
+      "term": 3,
+      "week": 6
     },
     {
       "id": "03983c10-47f8-4bf1-9ed2-db24366f4b54",
@@ -1046,12 +1206,14 @@
       "pos": "noun",
       "transcription": "t\u028cb",
       "exampleSentence": "The duck floats in the bubbly tub.",
-      "level": 32,
+      "level": 306,
       "imageUrl": "https://dummyimage.com/256x256/2a9d8f/ffffff&text=tub",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-06T00:00:00.000Z",
-      "updatedAt": "2025-08-06T00:00:00.000Z"
+      "updatedAt": "2025-08-06T00:00:00.000Z",
+      "term": 3,
+      "week": 6
     },
     {
       "id": "fc2927bc-864f-4699-b5ee-810a4353f420",
@@ -1059,12 +1221,14 @@
       "pos": "adverb",
       "transcription": "wa\u026a",
       "exampleSentence": "Why is the puppy wagging its tail?",
-      "level": 32,
+      "level": 306,
       "imageUrl": "https://dummyimage.com/256x256/2a9d8f/ffffff&text=why",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-06T00:00:00.000Z",
-      "updatedAt": "2025-08-06T00:00:00.000Z"
+      "updatedAt": "2025-08-06T00:00:00.000Z",
+      "term": 3,
+      "week": 6
     },
     {
       "id": "1f9935be-83a4-4e04-b732-02523dd96f00",
@@ -1072,12 +1236,14 @@
       "pos": "determiner",
       "transcription": "m\u028ct\u0283",
       "exampleSentence": "Thank you so much for helping me.",
-      "level": 33,
+      "level": 307,
       "imageUrl": "https://dummyimage.com/256x256/f4a261/ffffff&text=much",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-13T00:00:00.000Z",
-      "updatedAt": "2025-08-13T00:00:00.000Z"
+      "updatedAt": "2025-08-13T00:00:00.000Z",
+      "term": 3,
+      "week": 7
     },
     {
       "id": "c8cfdb00-389f-4966-9276-665b8b3bd0ad",
@@ -1085,12 +1251,14 @@
       "pos": "noun",
       "transcription": "\u0283\u0251p",
       "exampleSentence": "We visit the shop to buy fresh fruit.",
-      "level": 33,
+      "level": 307,
       "imageUrl": "https://dummyimage.com/256x256/f4a261/ffffff&text=shop",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-13T00:00:00.000Z",
-      "updatedAt": "2025-08-13T00:00:00.000Z"
+      "updatedAt": "2025-08-13T00:00:00.000Z",
+      "term": 3,
+      "week": 7
     },
     {
       "id": "04573293-7c94-4af2-bfbd-44bc1e39bd20",
@@ -1098,12 +1266,14 @@
       "pos": "determiner",
       "transcription": "s\u028ct\u0283",
       "exampleSentence": "It was such a bright and happy day.",
-      "level": 33,
+      "level": 307,
       "imageUrl": "https://dummyimage.com/256x256/f4a261/ffffff&text=such",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-13T00:00:00.000Z",
-      "updatedAt": "2025-08-13T00:00:00.000Z"
+      "updatedAt": "2025-08-13T00:00:00.000Z",
+      "term": 3,
+      "week": 7
     },
     {
       "id": "f48071ef-64d9-4e32-bbf4-960e647c55ad",
@@ -1111,12 +1281,14 @@
       "pos": "noun",
       "transcription": "\u00f0\u0259 k\u00e6t s\u00e6t \u0251n \u00f0\u0259 m\u00e6t",
       "exampleSentence": "Read the sentence aloud and point to each word.",
-      "level": 33,
+      "level": 307,
       "imageUrl": "https://dummyimage.com/256x256/f4a261/ffffff&text=The+cat+sat+on+the+mat.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-13T00:00:00.000Z",
-      "updatedAt": "2025-08-13T00:00:00.000Z"
+      "updatedAt": "2025-08-13T00:00:00.000Z",
+      "term": 3,
+      "week": 7
     },
     {
       "id": "edca9a94-caf8-4550-b19f-13146db588ee",
@@ -1124,12 +1296,14 @@
       "pos": "verb",
       "transcription": "k\u028cm",
       "exampleSentence": "Come and join the circle on the rug.",
-      "level": 34,
+      "level": 308,
       "imageUrl": "https://dummyimage.com/256x256/e76f51/ffffff&text=come",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-20T00:00:00.000Z",
-      "updatedAt": "2025-08-20T00:00:00.000Z"
+      "updatedAt": "2025-08-20T00:00:00.000Z",
+      "term": 3,
+      "week": 8
     },
     {
       "id": "bd73b693-3eb1-4b40-8784-ca03e2f1c9fa",
@@ -1137,12 +1311,14 @@
       "pos": "noun",
       "transcription": "\u0283\u026ap",
       "exampleSentence": "The ship sails across the blue sea.",
-      "level": 34,
+      "level": 308,
       "imageUrl": "https://dummyimage.com/256x256/e76f51/ffffff&text=ship",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-20T00:00:00.000Z",
-      "updatedAt": "2025-08-20T00:00:00.000Z"
+      "updatedAt": "2025-08-20T00:00:00.000Z",
+      "term": 3,
+      "week": 8
     },
     {
       "id": "b98a7480-432a-4238-989e-ce6af63f075d",
@@ -1150,12 +1326,14 @@
       "pos": "determiner",
       "transcription": "s\u028cm",
       "exampleSentence": "Would you like some cold water?",
-      "level": 34,
+      "level": 308,
       "imageUrl": "https://dummyimage.com/256x256/e76f51/ffffff&text=some",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-20T00:00:00.000Z",
-      "updatedAt": "2025-08-20T00:00:00.000Z"
+      "updatedAt": "2025-08-20T00:00:00.000Z",
+      "term": 3,
+      "week": 8
     },
     {
       "id": "9e1fa5d5-7c8f-40cb-ad63-6de4459f5fae",
@@ -1163,12 +1341,14 @@
       "pos": "noun",
       "transcription": "\u00f0\u026as p\u0251t \u026az \u02c8v\u025bri h\u0251t",
       "exampleSentence": "Practice reading this sentence with expression.",
-      "level": 34,
+      "level": 308,
       "imageUrl": "https://dummyimage.com/256x256/e76f51/ffffff&text=This+pot+is+very+hot.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-20T00:00:00.000Z",
-      "updatedAt": "2025-08-20T00:00:00.000Z"
+      "updatedAt": "2025-08-20T00:00:00.000Z",
+      "term": 3,
+      "week": 8
     },
     {
       "id": "fccedc63-b6b7-4696-8f05-1b9aee9f9d16",
@@ -1176,12 +1356,14 @@
       "pos": "verb",
       "transcription": "t\u0283\u0251p",
       "exampleSentence": "Help chop the carrots for the soup.",
-      "level": 35,
+      "level": 309,
       "imageUrl": "https://dummyimage.com/256x256/9a8c98/ffffff&text=chop",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-27T00:00:00.000Z",
-      "updatedAt": "2025-08-27T00:00:00.000Z"
+      "updatedAt": "2025-08-27T00:00:00.000Z",
+      "term": 3,
+      "week": 9
     },
     {
       "id": "59ec0edb-c244-40c8-8543-902e99da021c",
@@ -1189,12 +1371,14 @@
       "pos": "noun",
       "transcription": "\u0261e\u026am",
       "exampleSentence": "We played a fun game at recess.",
-      "level": 35,
+      "level": 309,
       "imageUrl": "https://dummyimage.com/256x256/9a8c98/ffffff&text=game",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-27T00:00:00.000Z",
-      "updatedAt": "2025-08-27T00:00:00.000Z"
+      "updatedAt": "2025-08-27T00:00:00.000Z",
+      "term": 3,
+      "week": 9
     },
     {
       "id": "3248a9a2-a9ac-48d8-b33c-01965319cdd6",
@@ -1202,12 +1386,14 @@
       "pos": "noun",
       "transcription": "ne\u026am",
       "exampleSentence": "Write your name neatly on the line.",
-      "level": 35,
+      "level": 309,
       "imageUrl": "https://dummyimage.com/256x256/9a8c98/ffffff&text=name",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-27T00:00:00.000Z",
-      "updatedAt": "2025-08-27T00:00:00.000Z"
+      "updatedAt": "2025-08-27T00:00:00.000Z",
+      "term": 3,
+      "week": 9
     },
     {
       "id": "9acd4d48-2b8a-4f73-aec1-3646c92709a3",
@@ -1215,12 +1401,14 @@
       "pos": "noun",
       "transcription": "\u00f0\u0259 r\u025bd w\u026a\u0261 \u026az b\u026a\u0261",
       "exampleSentence": "Say the sentence slowly and clap the words.",
-      "level": 35,
+      "level": 309,
       "imageUrl": "https://dummyimage.com/256x256/9a8c98/ffffff&text=The+red+wig+is+big.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-08-27T00:00:00.000Z",
-      "updatedAt": "2025-08-27T00:00:00.000Z"
+      "updatedAt": "2025-08-27T00:00:00.000Z",
+      "term": 3,
+      "week": 9
     },
     {
       "id": "251266bb-a06e-4e0f-a6f4-256ff7887e6e",
@@ -1228,12 +1416,14 @@
       "pos": "noun",
       "transcription": "t\u0283\u026an",
       "exampleSentence": "Keep your chin up when you sing.",
-      "level": 36,
+      "level": 310,
       "imageUrl": "https://dummyimage.com/256x256/6d597a/ffffff&text=chin",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-03T00:00:00.000Z",
-      "updatedAt": "2025-09-03T00:00:00.000Z"
+      "updatedAt": "2025-09-03T00:00:00.000Z",
+      "term": 3,
+      "week": 10
     },
     {
       "id": "ef0eb254-d19d-499f-a217-7089feb12ce3",
@@ -1241,12 +1431,14 @@
       "pos": "noun",
       "transcription": "\u026at \u026az f\u028cn tu ple\u026a w\u026a\u00f0 ju",
       "exampleSentence": "Read the sentence with a happy voice.",
-      "level": 36,
+      "level": 310,
       "imageUrl": "https://dummyimage.com/256x256/6d597a/ffffff&text=It+is+fun+to+play+with+you.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-03T00:00:00.000Z",
-      "updatedAt": "2025-09-03T00:00:00.000Z"
+      "updatedAt": "2025-09-03T00:00:00.000Z",
+      "term": 3,
+      "week": 10
     },
     {
       "id": "6b420936-1bc1-4f13-9571-6b0334e25cb2",
@@ -1254,12 +1446,14 @@
       "pos": "verb",
       "transcription": "me\u026ad",
       "exampleSentence": "We made a card for our teacher.",
-      "level": 36,
+      "level": 310,
       "imageUrl": "https://dummyimage.com/256x256/6d597a/ffffff&text=made",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-03T00:00:00.000Z",
-      "updatedAt": "2025-09-03T00:00:00.000Z"
+      "updatedAt": "2025-09-03T00:00:00.000Z",
+      "term": 3,
+      "week": 10
     },
     {
       "id": "6dc65978-2d7b-4379-801c-940d482944b6",
@@ -1267,12 +1461,14 @@
       "pos": "verb",
       "transcription": "me\u026ak",
       "exampleSentence": "Make a wish before you blow the candles.",
-      "level": 36,
+      "level": 310,
       "imageUrl": "https://dummyimage.com/256x256/6d597a/ffffff&text=make",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-03T00:00:00.000Z",
-      "updatedAt": "2025-09-03T00:00:00.000Z"
+      "updatedAt": "2025-09-03T00:00:00.000Z",
+      "term": 3,
+      "week": 10
     },
     {
       "id": "a4c52957-6549-4924-a217-d942fdca4b46",
@@ -1280,12 +1476,14 @@
       "pos": "determiner",
       "transcription": "w\u028cn",
       "exampleSentence": "One penguin waddled across the ice.",
-      "level": 39,
+      "level": 402,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=one",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-24T00:00:00.000Z",
-      "updatedAt": "2025-09-24T00:00:00.000Z"
+      "updatedAt": "2025-09-24T00:00:00.000Z",
+      "term": 4,
+      "week": 2
     },
     {
       "id": "396a1dbf-8259-40be-9c5f-d6d598878546",
@@ -1293,12 +1491,14 @@
       "pos": "noun",
       "transcription": "\u00f0\u0259 b\u0254\u02d0l \u026az \u026an \u00f0\u0259 b\u0251ks",
       "exampleSentence": "Read the sentence and point to each word.",
-      "level": 39,
+      "level": 402,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=The+ball+is+in+the+box.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-24T00:00:00.000Z",
-      "updatedAt": "2025-09-24T00:00:00.000Z"
+      "updatedAt": "2025-09-24T00:00:00.000Z",
+      "term": 4,
+      "week": 2
     },
     {
       "id": "c16f39dd-14f1-4fd7-a8d3-97f1549d77d1",
@@ -1306,12 +1506,14 @@
       "pos": "determiner",
       "transcription": "\u03b8ri\u02d0",
       "exampleSentence": "Three birds chirped in the tree.",
-      "level": 39,
+      "level": 402,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=three",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-24T00:00:00.000Z",
-      "updatedAt": "2025-09-24T00:00:00.000Z"
+      "updatedAt": "2025-09-24T00:00:00.000Z",
+      "term": 4,
+      "week": 2
     },
     {
       "id": "f01af878-6700-4fe6-9bd2-0546406f4389",
@@ -1319,12 +1521,14 @@
       "pos": "determiner",
       "transcription": "tu\u02d0",
       "exampleSentence": "Two friends shared a book quietly.",
-      "level": 39,
+      "level": 402,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=two",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-24T00:00:00.000Z",
-      "updatedAt": "2025-09-24T00:00:00.000Z"
+      "updatedAt": "2025-09-24T00:00:00.000Z",
+      "term": 4,
+      "week": 2
     },
     {
       "id": "da24acfe-5074-40e0-b8e4-c3d19174305c",
@@ -1332,12 +1536,14 @@
       "pos": "noun",
       "transcription": "v\u00e6n",
       "exampleSentence": "The van brought fresh vegetables.",
-      "level": 39,
+      "level": 402,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=van",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-24T00:00:00.000Z",
-      "updatedAt": "2025-09-24T00:00:00.000Z"
+      "updatedAt": "2025-09-24T00:00:00.000Z",
+      "term": 4,
+      "week": 2
     },
     {
       "id": "482f4604-b0c6-46fb-a53d-74f765ae0dfd",
@@ -1345,12 +1551,14 @@
       "pos": "noun",
       "transcription": "b\u028cs",
       "exampleSentence": "The bus stopped at our school.",
-      "level": 40,
+      "level": 403,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=bus",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-30T00:00:00.000Z",
-      "updatedAt": "2025-09-30T00:00:00.000Z"
+      "updatedAt": "2025-09-30T00:00:00.000Z",
+      "term": 4,
+      "week": 3
     },
     {
       "id": "5093d0a0-1e27-45d4-981a-5c781f00108f",
@@ -1358,12 +1566,14 @@
       "pos": "noun",
       "transcription": "k\u0251\u02d0r",
       "exampleSentence": "A red car zoomed past the park.",
-      "level": 40,
+      "level": 403,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=car",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-30T00:00:00.000Z",
-      "updatedAt": "2025-09-30T00:00:00.000Z"
+      "updatedAt": "2025-09-30T00:00:00.000Z",
+      "term": 4,
+      "week": 3
     },
     {
       "id": "0d57ae45-a8e2-4156-a014-d0a9cce24668",
@@ -1371,12 +1581,14 @@
       "pos": "determiner",
       "transcription": "fa\u026av",
       "exampleSentence": "Five crayons rolled off the desk.",
-      "level": 40,
+      "level": 403,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=five",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-30T00:00:00.000Z",
-      "updatedAt": "2025-09-30T00:00:00.000Z"
+      "updatedAt": "2025-09-30T00:00:00.000Z",
+      "term": 4,
+      "week": 3
     },
     {
       "id": "08136d14-86d4-4006-b8a1-168ca76795fa",
@@ -1384,12 +1596,14 @@
       "pos": "determiner",
       "transcription": "f\u0254\u02d0r",
       "exampleSentence": "Four stars twinkled in the sky.",
-      "level": 40,
+      "level": 403,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=four",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-30T00:00:00.000Z",
-      "updatedAt": "2025-09-30T00:00:00.000Z"
+      "updatedAt": "2025-09-30T00:00:00.000Z",
+      "term": 4,
+      "week": 3
     },
     {
       "id": "e5208287-cbe5-48a1-a2d9-b051bcfcdd9e",
@@ -1397,12 +1611,14 @@
       "pos": "noun",
       "transcription": "ju\u02d0 \u0251r \u02c8v\u025bri t\u0254\u02d0l",
       "exampleSentence": "Say the sentence loudly and clearly.",
-      "level": 40,
+      "level": 403,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=You+are+very+tall.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-09-30T00:00:00.000Z",
-      "updatedAt": "2025-09-30T00:00:00.000Z"
+      "updatedAt": "2025-09-30T00:00:00.000Z",
+      "term": 4,
+      "week": 3
     },
     {
       "id": "421105cb-99f3-4e96-a1d2-a9bc0fa730d6",
@@ -1410,12 +1626,14 @@
       "pos": "determiner",
       "transcription": "\u02c8s\u025bv\u0259n",
       "exampleSentence": "Seven bees buzzed around the hive.",
-      "level": 41,
+      "level": 404,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=seven",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-08T00:00:00.000Z",
-      "updatedAt": "2025-10-08T00:00:00.000Z"
+      "updatedAt": "2025-10-08T00:00:00.000Z",
+      "term": 4,
+      "week": 4
     },
     {
       "id": "d1d64fde-0177-4a81-8982-9d018ef9c009",
@@ -1423,12 +1641,14 @@
       "pos": "determiner",
       "transcription": "s\u026aks",
       "exampleSentence": "Six blocks stacked into a tower.",
-      "level": 41,
+      "level": 404,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=six",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-08T00:00:00.000Z",
-      "updatedAt": "2025-10-08T00:00:00.000Z"
+      "updatedAt": "2025-10-08T00:00:00.000Z",
+      "term": 4,
+      "week": 4
     },
     {
       "id": "37bf46d4-ce86-4698-8a02-aa8eaf928ecb",
@@ -1436,12 +1656,14 @@
       "pos": "noun",
       "transcription": "\u00f0\u0259 h\u025bn le\u026az \u025b\u0261z",
       "exampleSentence": "Read the sentence smoothly from left to right.",
-      "level": 41,
+      "level": 404,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=The+hen+lays+eggs.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-08T00:00:00.000Z",
-      "updatedAt": "2025-10-08T00:00:00.000Z"
+      "updatedAt": "2025-10-08T00:00:00.000Z",
+      "term": 4,
+      "week": 4
     },
     {
       "id": "dbbaddb9-f856-4a36-9a35-ca56d146024a",
@@ -1449,12 +1671,14 @@
       "pos": "verb",
       "transcription": "w\u0251nt",
       "exampleSentence": "I want to draw a rainbow.",
-      "level": 41,
+      "level": 404,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=want",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-08T00:00:00.000Z",
-      "updatedAt": "2025-10-08T00:00:00.000Z"
+      "updatedAt": "2025-10-08T00:00:00.000Z",
+      "term": 4,
+      "week": 4
     },
     {
       "id": "b1a1c008-3a39-483b-b8da-ce92e82456d1",
@@ -1462,12 +1686,14 @@
       "pos": "verb",
       "transcription": "w\u025bnt",
       "exampleSentence": "We went to visit grandma.",
-      "level": 41,
+      "level": 404,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=went",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-08T00:00:00.000Z",
-      "updatedAt": "2025-10-08T00:00:00.000Z"
+      "updatedAt": "2025-10-08T00:00:00.000Z",
+      "term": 4,
+      "week": 4
     },
     {
       "id": "1411ab70-a65f-4288-8a69-b10842c6ecf5",
@@ -1475,12 +1701,14 @@
       "pos": "determiner",
       "transcription": "e\u026at",
       "exampleSentence": "Eight fish swam in the pond.",
-      "level": 42,
+      "level": 405,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=eight",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-15T00:00:00.000Z",
-      "updatedAt": "2025-10-15T00:00:00.000Z"
+      "updatedAt": "2025-10-15T00:00:00.000Z",
+      "term": 4,
+      "week": 5
     },
     {
       "id": "0ece4221-16bc-424e-acf9-96003db0544c",
@@ -1488,12 +1716,14 @@
       "pos": "noun",
       "transcription": "a\u026a w\u025bnt tu \u00f0\u0259 m\u0254l",
       "exampleSentence": "Tell the sentence with a storyteller voice.",
-      "level": 42,
+      "level": 405,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=I+went+to+the+mall.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-15T00:00:00.000Z",
-      "updatedAt": "2025-10-15T00:00:00.000Z"
+      "updatedAt": "2025-10-15T00:00:00.000Z",
+      "term": 4,
+      "week": 5
     },
     {
       "id": "ef705195-1bb6-4221-8b8d-372876be1538",
@@ -1501,12 +1731,14 @@
       "pos": "adjective",
       "transcription": "\u02c8l\u026at\u0259l",
       "exampleSentence": "A little kitten curled up to nap.",
-      "level": 42,
+      "level": 405,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=little",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-15T00:00:00.000Z",
-      "updatedAt": "2025-10-15T00:00:00.000Z"
+      "updatedAt": "2025-10-15T00:00:00.000Z",
+      "term": 4,
+      "week": 5
     },
     {
       "id": "24b0d695-dcee-4e4d-ba4e-fc08bb992444",
@@ -1514,12 +1746,14 @@
       "pos": "determiner",
       "transcription": "na\u026an",
       "exampleSentence": "Nine leaves rustled in the breeze.",
-      "level": 42,
+      "level": 405,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=nine",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-15T00:00:00.000Z",
-      "updatedAt": "2025-10-15T00:00:00.000Z"
+      "updatedAt": "2025-10-15T00:00:00.000Z",
+      "term": 4,
+      "week": 5
     },
     {
       "id": "906a0ef7-8547-4821-af04-81ef8dd43662",
@@ -1527,12 +1761,14 @@
       "pos": "determiner",
       "transcription": "t\u025bn",
       "exampleSentence": "Ten kids skipped along the path.",
-      "level": 42,
+      "level": 405,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=ten",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-15T00:00:00.000Z",
-      "updatedAt": "2025-10-15T00:00:00.000Z"
+      "updatedAt": "2025-10-15T00:00:00.000Z",
+      "term": 4,
+      "week": 5
     },
     {
       "id": "aa0427ef-b89d-4dd6-838a-61d5c0314a14",
@@ -1540,12 +1776,14 @@
       "pos": "determiner",
       "transcription": "\u026a\u02c8l\u025bv\u0259n",
       "exampleSentence": "Eleven shells lined the shore.",
-      "level": 43,
+      "level": 406,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=eleven",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-22T00:00:00.000Z",
-      "updatedAt": "2025-10-22T00:00:00.000Z"
+      "updatedAt": "2025-10-22T00:00:00.000Z",
+      "term": 4,
+      "week": 6
     },
     {
       "id": "0fb3cc10-7b82-400a-879e-55946de51e0c",
@@ -1553,12 +1791,14 @@
       "pos": "noun",
       "transcription": "a\u026a la\u026ak tu ple\u026a w\u026a\u00f0 ju\u02d0",
       "exampleSentence": "Share the sentence with a friendly smile.",
-      "level": 43,
+      "level": 406,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=I+like+to+play+with+you.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-22T00:00:00.000Z",
-      "updatedAt": "2025-10-22T00:00:00.000Z"
+      "updatedAt": "2025-10-22T00:00:00.000Z",
+      "term": 4,
+      "week": 6
     },
     {
       "id": "fc54c6b9-0860-4ef6-95aa-65241094cebb",
@@ -1566,12 +1806,14 @@
       "pos": "noun",
       "transcription": "d\u0292i\u02d0p",
       "exampleSentence": "The jeep drove over the rocky hill.",
-      "level": 43,
+      "level": 406,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=jeep",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-22T00:00:00.000Z",
-      "updatedAt": "2025-10-22T00:00:00.000Z"
+      "updatedAt": "2025-10-22T00:00:00.000Z",
+      "term": 4,
+      "week": 6
     },
     {
       "id": "942eed25-7752-4b36-a9e0-2a890f65753c",
@@ -1579,12 +1821,14 @@
       "pos": "noun",
       "transcription": "\u02c8t\u00e6ksi",
       "exampleSentence": "A yellow taxi waited by the curb.",
-      "level": 43,
+      "level": 406,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=taxi",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-22T00:00:00.000Z",
-      "updatedAt": "2025-10-22T00:00:00.000Z"
+      "updatedAt": "2025-10-22T00:00:00.000Z",
+      "term": 4,
+      "week": 6
     },
     {
       "id": "01df226a-e81e-4bac-ae06-76d1a75ec12e",
@@ -1592,12 +1836,14 @@
       "pos": "determiner",
       "transcription": "tw\u025blv",
       "exampleSentence": "Twelve candles glowed on the cake.",
-      "level": 43,
+      "level": 406,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=twelve",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-22T00:00:00.000Z",
-      "updatedAt": "2025-10-22T00:00:00.000Z"
+      "updatedAt": "2025-10-22T00:00:00.000Z",
+      "term": 4,
+      "week": 6
     },
     {
       "id": "e42dd882-2fcd-43ca-9403-3dcd53a75046",
@@ -1605,12 +1851,14 @@
       "pos": "determiner",
       "transcription": "\u02ccf\u0254\u02d0r\u02c8ti\u02d0n",
       "exampleSentence": "Fourteen birds flew across the lake.",
-      "level": 44,
+      "level": 407,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=fourteen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-29T00:00:00.000Z",
-      "updatedAt": "2025-10-29T00:00:00.000Z"
+      "updatedAt": "2025-10-29T00:00:00.000Z",
+      "term": 4,
+      "week": 7
     },
     {
       "id": "049f2f64-a29a-46d6-b9b4-1ee71ac16446",
@@ -1618,12 +1866,14 @@
       "pos": "noun",
       "transcription": "a\u026a k\u00e6n sp\u025bl \u02c8m\u025bni w\u025c\u02d0rdz",
       "exampleSentence": "Practice reading the sentence with pride.",
-      "level": 44,
+      "level": 407,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=I+can+spell+many+words.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-29T00:00:00.000Z",
-      "updatedAt": "2025-10-29T00:00:00.000Z"
+      "updatedAt": "2025-10-29T00:00:00.000Z",
+      "term": 4,
+      "week": 7
     },
     {
       "id": "b6c33cd0-962f-4332-a0e9-1671aacecc59",
@@ -1631,12 +1881,14 @@
       "pos": "verb",
       "transcription": "pli\u02d0z",
       "exampleSentence": "Please pass the glue to me.",
-      "level": 44,
+      "level": 407,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=please",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-29T00:00:00.000Z",
-      "updatedAt": "2025-10-29T00:00:00.000Z"
+      "updatedAt": "2025-10-29T00:00:00.000Z",
+      "term": 4,
+      "week": 7
     },
     {
       "id": "f64150a4-f52a-4d32-96cc-4585e4914508",
@@ -1644,12 +1896,14 @@
       "pos": "verb",
       "transcription": "s\u025bd",
       "exampleSentence": "She said thank you politely.",
-      "level": 44,
+      "level": 407,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=said",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-29T00:00:00.000Z",
-      "updatedAt": "2025-10-29T00:00:00.000Z"
+      "updatedAt": "2025-10-29T00:00:00.000Z",
+      "term": 4,
+      "week": 7
     },
     {
       "id": "5fdd2e1b-7787-4f9c-9998-09f709defe97",
@@ -1657,12 +1911,14 @@
       "pos": "determiner",
       "transcription": "\u02cc\u03b8\u025c\u02d0r\u02c8ti\u02d0n",
       "exampleSentence": "Thirteen balloons floated up high.",
-      "level": 44,
+      "level": 407,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=thirteen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-10-29T00:00:00.000Z",
-      "updatedAt": "2025-10-29T00:00:00.000Z"
+      "updatedAt": "2025-10-29T00:00:00.000Z",
+      "term": 4,
+      "week": 7
     },
     {
       "id": "ab6deb0d-38a6-4a91-83c6-22749c9c8876",
@@ -1670,12 +1926,14 @@
       "pos": "noun",
       "transcription": "bo\u028at",
       "exampleSentence": "The boat rocked gently on the water.",
-      "level": 45,
+      "level": 408,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=boat",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-05T00:00:00.000Z",
-      "updatedAt": "2025-11-05T00:00:00.000Z"
+      "updatedAt": "2025-11-05T00:00:00.000Z",
+      "term": 4,
+      "week": 8
     },
     {
       "id": "3ef4822e-a96a-4341-a443-018a9e98ef74",
@@ -1683,12 +1941,14 @@
       "pos": "determiner",
       "transcription": "\u02ccf\u026af\u02c8ti\u02d0n",
       "exampleSentence": "Fifteen seeds sprouted in the soil.",
-      "level": 45,
+      "level": 408,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=fifteen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-05T00:00:00.000Z",
-      "updatedAt": "2025-11-05T00:00:00.000Z"
+      "updatedAt": "2025-11-05T00:00:00.000Z",
+      "term": 4,
+      "week": 8
     },
     {
       "id": "4deb6d0a-a8a7-4e4f-8d9d-ae7f8b0eb32c",
@@ -1696,12 +1956,14 @@
       "pos": "noun",
       "transcription": "l\u025bt \u028cs kla\u026am \u028cp \u00f0\u0259 h\u026al",
       "exampleSentence": "Read the sentence while pretending to climb.",
-      "level": 45,
+      "level": 408,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=Let+us+climb+up+the+hill.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-05T00:00:00.000Z",
-      "updatedAt": "2025-11-05T00:00:00.000Z"
+      "updatedAt": "2025-11-05T00:00:00.000Z",
+      "term": 4,
+      "week": 8
     },
     {
       "id": "a892d52f-18c2-4385-b469-75f20405a63b",
@@ -1709,12 +1971,14 @@
       "pos": "noun",
       "transcription": "\u0283\u026ap",
       "exampleSentence": "A large ship sailed into the harbor.",
-      "level": 45,
+      "level": 408,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=ship",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-05T00:00:00.000Z",
-      "updatedAt": "2025-11-05T00:00:00.000Z"
+      "updatedAt": "2025-11-05T00:00:00.000Z",
+      "term": 4,
+      "week": 8
     },
     {
       "id": "9b4d24a7-4f59-4300-9d22-e532b887adfb",
@@ -1722,12 +1986,14 @@
       "pos": "determiner",
       "transcription": "\u02ccs\u026ak\u02c8sti\u02d0n",
       "exampleSentence": "Sixteen stars sparkled at night.",
-      "level": 45,
+      "level": 408,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=sixteen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-05T00:00:00.000Z",
-      "updatedAt": "2025-11-05T00:00:00.000Z"
+      "updatedAt": "2025-11-05T00:00:00.000Z",
+      "term": 4,
+      "week": 8
     },
     {
       "id": "a673d5aa-2a9a-4fe9-bf9d-cc8615e6de7d",
@@ -1735,12 +2001,14 @@
       "pos": "determiner",
       "transcription": "\u02cce\u026a\u02c8ti\u02d0n",
       "exampleSentence": "Eighteen bubbles floated in the air.",
-      "level": 46,
+      "level": 409,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=eighteen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-12T00:00:00.000Z",
-      "updatedAt": "2025-11-12T00:00:00.000Z"
+      "updatedAt": "2025-11-12T00:00:00.000Z",
+      "term": 4,
+      "week": 9
     },
     {
       "id": "364d0ff6-e3bb-4fb9-be2f-4e3c938a9234",
@@ -1748,12 +2016,14 @@
       "pos": "noun",
       "transcription": "a\u026a w\u0251nt tu t\u025bl ju\u02d0 \u0259 \u02c8st\u0254\u02d0ri",
       "exampleSentence": "Share the sentence with storytelling expression.",
-      "level": 46,
+      "level": 409,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=I+want+to+tell+you+a+story.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-12T00:00:00.000Z",
-      "updatedAt": "2025-11-12T00:00:00.000Z"
+      "updatedAt": "2025-11-12T00:00:00.000Z",
+      "term": 4,
+      "week": 9
     },
     {
       "id": "279ac1a4-4ee8-441a-9ef1-8edd8cd2313a",
@@ -1761,12 +2031,14 @@
       "pos": "noun",
       "transcription": "\u02c8l\u0254\u02d0ri",
       "exampleSentence": "A blue lorry carried apples to market.",
-      "level": 46,
+      "level": 409,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=lorry",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-12T00:00:00.000Z",
-      "updatedAt": "2025-11-12T00:00:00.000Z"
+      "updatedAt": "2025-11-12T00:00:00.000Z",
+      "term": 4,
+      "week": 9
     },
     {
       "id": "5654d606-9ee0-4c63-9330-9026b2cf5c33",
@@ -1774,12 +2046,14 @@
       "pos": "determiner",
       "transcription": "\u02ccs\u025bv\u0259n\u02c8ti\u02d0n",
       "exampleSentence": "Seventeen raindrops dotted the window.",
-      "level": 46,
+      "level": 409,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=seventeen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-12T00:00:00.000Z",
-      "updatedAt": "2025-11-12T00:00:00.000Z"
+      "updatedAt": "2025-11-12T00:00:00.000Z",
+      "term": 4,
+      "week": 9
     },
     {
       "id": "ae3b650d-3c32-4fa3-9dac-27193778c5d6",
@@ -1787,12 +2061,14 @@
       "pos": "noun",
       "transcription": "tr\u028ck",
       "exampleSentence": "The truck delivered art supplies.",
-      "level": 46,
+      "level": 409,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=truck",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-12T00:00:00.000Z",
-      "updatedAt": "2025-11-12T00:00:00.000Z"
+      "updatedAt": "2025-11-12T00:00:00.000Z",
+      "term": 4,
+      "week": 9
     },
     {
       "id": "d4141cc4-5841-4608-bfeb-ee023857dc4c",
@@ -1800,12 +2076,14 @@
       "pos": "noun",
       "transcription": "\u02c8ba\u026as\u026ak\u0259l",
       "exampleSentence": "She rode her bicycle down the lane.",
-      "level": 47,
+      "level": 410,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=bicycle",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-19T00:00:00.000Z",
-      "updatedAt": "2025-11-19T00:00:00.000Z"
+      "updatedAt": "2025-11-19T00:00:00.000Z",
+      "term": 4,
+      "week": 10
     },
     {
       "id": "1480b8e9-1b05-40f9-88f9-6c5af589cada",
@@ -1813,12 +2091,14 @@
       "pos": "determiner",
       "transcription": "\u02ccna\u026an\u02c8ti\u02d0n",
       "exampleSentence": "Nineteen petals fell to the ground.",
-      "level": 47,
+      "level": 410,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=nineteen",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-19T00:00:00.000Z",
-      "updatedAt": "2025-11-19T00:00:00.000Z"
+      "updatedAt": "2025-11-19T00:00:00.000Z",
+      "term": 4,
+      "week": 10
     },
     {
       "id": "63eb2a39-2bed-47d1-b60b-fedfc1ee3a4f",
@@ -1826,12 +2106,14 @@
       "pos": "noun",
       "transcription": "\u02c8r\u0251\u02d0k\u026at",
       "exampleSentence": "The rocket blasted off into space.",
-      "level": 47,
+      "level": 410,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=rocket",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-19T00:00:00.000Z",
-      "updatedAt": "2025-11-19T00:00:00.000Z"
+      "updatedAt": "2025-11-19T00:00:00.000Z",
+      "term": 4,
+      "week": 10
     },
     {
       "id": "f7b64881-8f46-4e6a-b055-f3497cdc72a9",
@@ -1839,12 +2121,14 @@
       "pos": "noun",
       "transcription": "\u0283i s\u025blz t\u0254\u026az \u00e6t h\u0259r \u0283\u0251p",
       "exampleSentence": "Read the sentence with clear, careful sounds.",
-      "level": 47,
+      "level": 410,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=She+sells+toys+at+her+shop.",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-19T00:00:00.000Z",
-      "updatedAt": "2025-11-19T00:00:00.000Z"
+      "updatedAt": "2025-11-19T00:00:00.000Z",
+      "term": 4,
+      "week": 10
     },
     {
       "id": "390a66f4-7d4a-452e-88ba-5ce4fa68ef0e",
@@ -1852,12 +2136,14 @@
       "pos": "determiner",
       "transcription": "\u02c8tw\u025bnti",
       "exampleSentence": "Twenty crayons colored the mural.",
-      "level": 47,
+      "level": 410,
       "imageUrl": "https://dummyimage.com/256x256/d9f99d/ffffff&text=twenty",
       "audioUrl": "",
       "aiGenerated": false,
       "createdAt": "2025-11-19T00:00:00.000Z",
-      "updatedAt": "2025-11-19T00:00:00.000Z"
+      "updatedAt": "2025-11-19T00:00:00.000Z",
+      "term": 4,
+      "week": 10
     }
   ]
 }

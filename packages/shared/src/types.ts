@@ -15,6 +15,8 @@ export interface Word {
   transcription: string;
   exampleSentence?: string;
   level: number;
+  term?: number;
+  week?: number;
   imageUrl?: string;
   audioUrl?: string;
   aiGenerated: boolean;

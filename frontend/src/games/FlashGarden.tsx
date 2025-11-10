@@ -1,7 +1,7 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useAppStore } from "../store/appStore";
 import { shuffle } from "../utils/random";
-import { playSound } from "../utils/sound";
+import { playCelebration, playSound, playSuccessTone } from "../utils/sound";
 
 interface CardData {
   id: string;
@@ -63,6 +63,7 @@ const FlashGarden = () => {
     if (!firstCard || !secondCard) return;
 
     if (firstCard.wordId === secondCard.wordId && firstCard.id !== secondCard.id) {
+      playSuccessTone();
       setMatchedIds((prev) => [...prev, firstCard.wordId]);
       setStatus("Great job! Flower blooming!");
       setTimeout(() => setFlippedIds([]), 800);
@@ -92,6 +93,12 @@ const FlashGarden = () => {
   };
 
   const completion = matchedIds.length === cards.length / 2;
+
+  useEffect(() => {
+    if (completion) {
+      playCelebration();
+    }
+  }, [completion]);
 
   return (
     <div>

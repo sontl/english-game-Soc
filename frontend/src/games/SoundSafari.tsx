@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useAppStore } from "../store/appStore";
 import { shuffle } from "../utils/random";
-import { playSound } from "../utils/sound";
+import { playSound, playSuccessTone } from "../utils/sound";
 
 const SoundSafari = () => {
   const { words } = useAppStore();
@@ -27,6 +27,7 @@ const SoundSafari = () => {
   const handleOption = (wordId: string) => {
     if (!currentRound) return;
     if (wordId === currentRound.word.id) {
+      playSuccessTone();
       setScore((prev) => prev + 1);
       setMessage("Awesome listening! Next animal incoming.");
     } else {
@@ -47,7 +48,7 @@ const SoundSafari = () => {
       <div className="rounded-3xl bg-gradient-to-br from-secondary/20 via-white to-accent/20 p-6 text-center">
         <button
           type="button"
-          onClick={() => playSound(currentRound?.word.audioUrl)}
+          onClick={() => playSound(currentRound?.word.audioUrl, currentRound?.word.text)}
           className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-primary text-3xl text-white shadow"
           aria-label="Play word audio"
         >

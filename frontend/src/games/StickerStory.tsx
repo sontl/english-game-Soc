@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type DragEvent } from "react";
 import { useAppStore } from "../store/appStore";
+import { playSuccessTone } from "../utils/sound";
 
 interface Sticker {
   id: string;
@@ -64,6 +65,7 @@ const StickerStory = () => {
         imageUrl: word.imageUrl
       }
     ]);
+    playSuccessTone();
   };
 
   return (

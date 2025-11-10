@@ -1,6 +1,7 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useAppStore } from "../store/appStore";
 import { shuffle } from "../utils/random";
+import { playCelebration, playSuccessTone } from "../utils/sound";
 
 interface SentencePrompt {
   id: string;
@@ -23,6 +24,7 @@ const LittleExplorer = () => {
   const { words } = useAppStore();
   const prompts = useMemo(() => shuffle(buildPrompts(words)).slice(0, 3), [words]);
   const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [feedback, setFeedback] = useState<Record<string, "correct" | "wrong">>({});
   const [activePrompt] = useState(prompts[0]);
 
   const unusedTiles = prompts
@@ -30,8 +32,24 @@ const LittleExplorer = () => {
     .filter((tile) => !Object.values(answers).includes(tile));
 
   const handleDrop = (promptId: string, value: string) => {
-    setAnswers((prev) => ({ ...prev, [promptId]: value }));
+    const prompt = prompts.find((item) => item.id === promptId);
+    if (!prompt) return;
+    const normalized = value.trim().toLowerCase();
+    if (normalized === prompt.missing.toLowerCase()) {
+      playSuccessTone();
+      setAnswers((prev) => ({ ...prev, [promptId]: prompt.missing }));
+      setFeedback((prev) => ({ ...prev, [promptId]: "correct" }));
+    } else {
+      setFeedback((prev) => ({ ...prev, [promptId]: "wrong" }));
+    }
   };
+
+  useEffect(() => {
+    if (prompts.length === 0) return;
+    if (Object.keys(answers).length === prompts.length) {
+      playCelebration();
+    }
+  }, [answers, prompts.length]);
 
   return (
     <div className="flex flex-col gap-5">
@@ -76,6 +94,9 @@ const LittleExplorer = () => {
                 <span className="text-sm text-success">
                   Great! {current} completes the sentence.
                 </span>
+              )}
+              {!current && feedback[prompt.id] === "wrong" && (
+                <span className="text-sm text-rose-500">Oops! Try a different word.</span>
               )}
             </div>
           );
