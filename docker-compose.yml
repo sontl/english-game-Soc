@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   db:
-    image: postgres:16-alpine
+    image: postgres:17-bookworm
     environment:
       POSTGRES_DB: english_game
       POSTGRES_USER: postgres
